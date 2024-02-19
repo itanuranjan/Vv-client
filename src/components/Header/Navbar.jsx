@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import {
   AppBar,
@@ -13,8 +13,7 @@ import {
 } from "@mui/material";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import MenuIcon from "@mui/icons-material/Menu";
-
-const pages=['Home', 'Features', 'About', 'Login'];
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function Navbar() {
   const [anchorNav, setAnchorNav] = useState(null);
@@ -48,16 +47,11 @@ function Navbar() {
         </Typography>
 
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Feature</Button>
-          <Button color="inherit">Login</Button>
+          <Button component={Link} to="/" color="inherit">Home</Button>
+          <Button component={Link} to="/about" color="inherit">About</Button>
+          <Button component={Link} to="/features" color="inherit">Feature</Button>
+          <Button component={Link} to="/login" color="inherit">Login</Button>
         </Box>
-        {/* {pages.map((page)=>(
-          <Button color="inherit"> {page}</Button>
-        ))} */}
-
-    
 
         <Box sx={{ display: { xs: "flex", md: "none" } }}>
           <IconButton
@@ -76,14 +70,11 @@ function Navbar() {
             sx={{ display: { xs: "flex", md: "none" } }}
           >
             <MenuList>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>Feature</MenuItem>
-              <MenuItem>About</MenuItem>
-              <MenuItem>Login</MenuItem>
+              <MenuItem component={Link} to="/">Home</MenuItem>
+              <MenuItem component={Link} to="/features">Feature</MenuItem>
+              <MenuItem component={Link} to="/about">About</MenuItem>
+              <MenuItem component={Link} to="/login">Login</MenuItem>
             </MenuList>
-          {/* {pages.map((page)=>(
-          <MenuItem>{page}</MenuItem>
-        ))} */}
           </Menu>
         </Box>
 
