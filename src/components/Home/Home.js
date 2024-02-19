@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+// import locofy from "../../assets/locofy.png";
 
 export default function ActionAreaCard() {
   return (
@@ -12,7 +13,7 @@ export default function ActionAreaCard() {
         <CardMedia
           component="img"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="../../assets/locofy.png"
           alt="green iguana"
         />
         <CardContent>
@@ -26,5 +27,6 @@ export default function ActionAreaCard() {
         </CardContent>
       </CardActionArea>
     </Card>
+    
   );
 }
