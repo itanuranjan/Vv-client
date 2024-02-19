@@ -10,6 +10,8 @@ function App() {
       <Home />
       //h1
       //h2
+      My name is Akanksha
+
     </div>
   );
 }
