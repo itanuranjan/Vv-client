@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Header from './components/Header/Header';
 // import Home from './components/Home/Home';
-import Navbar from './components/Header/Navbar';
+import Navbar from './components/Navbar/Navbar';
+// import Carousel from './components/Carousel/Carousel';
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Features from "./components/pages/Features";
@@ -14,6 +14,7 @@ function App() {
     
     <Router>
       <Navbar />
+      {/* <Carousel/> */}
       <Routes>
         <Route path="/" exact element={<Home/>} />
         <Route path="/about" element={<About/>} />
