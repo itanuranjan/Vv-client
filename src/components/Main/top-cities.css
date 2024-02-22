@@ -16,9 +16,9 @@
   
   .top-cities-carousel-wrap {
     margin-top: 25px;
-    /* height: 300px; */
+    height: 300px;
     /* width: 1170px; */
-    /* margin: 0 auto; */
+    margin: 0 0;
   }
   
   .city-card-wrapper {
