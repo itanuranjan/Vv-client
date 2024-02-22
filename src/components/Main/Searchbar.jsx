@@ -1,107 +1,90 @@
-import React, { Component } from 'react';
-import Select from 'react-select';
-// import './Searchbar.css'; 
+import React, { Component } from "react";
+import { Link } from 'react-router-dom';
+import Select from "react-select";
+import "./Searchbar.css";
+// import Background from './Background';
 
 const options = [
-  { value: 'new-york', label: 'New York' },
-  { value: 'las-vegas', label: 'Las Vegas' },
-  { value: 'rome', label: 'Rome' },
-  { value: 'paris', label: 'Paris' },
-  { value: 'london', label: 'London' },
-  { value: 'dubai', label: 'Dubai' },
-  { value: 'barcelona', label: 'Barcelona' },
-  { value: 'madrid', label: 'Madrid' },
-  { value: 'singapore', label: 'Singapore' },
-  { value: 'venice', label: 'Venice' },
-  { value: 'milan', label: 'Milan' },
-  { value: 'naples', label: 'Naples' },
-  { value: 'budapest', label: 'Budapest' },
-  { value: 'edinburg', label: 'Edinburgh' }, // Corrected the spelling
-  { value: 'florence', label: 'Florence' }
+  { value: "New York", label: "New York" },
+  { value: "Las Vegas", label: "Las Vegas" },
+  { value: "Rome", label: "Rome" },
+  { value: "Paris", label: "Paris" },
+  { value: "London", label: "London" },
+  { value: "Dubai", label: "Dubai" },
+  { value: "Barcelona", label: "Barcelona" },
+  { value: "Madrid", label: "Madrid" },
+  { value: "Singapore", label: "Singapore" },
+  { value: "Venice", label: "Venice" },
+  { value: "Milan", label: "Milan" },
+  { value: "Naples", label: "Naples" },
+  { value: "Budapest", label: "Budapest" },
+  { value: "Edinburg", label: "Edinburg" },
+  { value: "Florence", label: "Florence" },
 ];
 
 const customStyles = {
   option: (provided, state) => ({
     ...provided,
-    borderBottom: 'none',
-    color: state.isSelected ? 'red' : '#727272',
+    borderBottom: "none",
+    color: state.isSelected ? "red" : "#727272",
     padding: 10,
-    cursor: 'pointer',
-    background: state.isSelected ? 'white' : 'white',
-    fontSize: '13px',
-    textAlign: 'left',
-    width: 120
+    cursor: "pointer",
+    background: state.isSelected ? "white" : "white",
+    fontSize: "13px",
+    textAlign: "left",
+    paddingLeft: "20px",
+    width: 100,
   }),
   control: () => ({
-    width: 150,
-    display: 'flex',
-    fontSize: '14px',
-    marginTop: '10px',
-    paddingLeft: '5px'
+    width: 100,
+    display: "flex",
+    marginTop: "10px",
+    marginLeft: "30px",
+    fontSize: "14px",
   }),
   singleValue: (provided, state) => {
     const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
+    const transition = "opacity 300ms";
 
     return { ...provided, opacity, transition };
-  }
-};
-
-const smallSearchbar = {
-  option: (provided, state) => ({
-    ...provided,
-    borderBottom: 'none',
-    color: state.isSelected ? 'red' : '#727272',
-    padding: 10,
-    cursor: 'pointer',
-    background: state.isSelected ? 'white' : 'white',
-    fontSize: '13px',
-    textAlign: 'left',
-    paddingLeft: '20px',
-    width: 150
-  }),
-  control: () => ({
-    width: 150,
-    display: 'flex',
-    fontSize: '11px',
-    marginLeft: '15px'
-  }),
-  singleValue: (provided, state) => {
-    const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
-
-    return { ...provided, opacity, transition };
-  }
+  },
 };
 
 class Searchbar extends Component {
   state = {
-    selectedOption: null
+    selectedOption: null,
   };
 
-  handleChange = selectedOption => {
-    this.setState({ selectedOption });
-    this.changeUrl(selectedOption.value);
-  };
-
-  changeUrl = url => {
-    // Assuming you are using React Router for navigation
-    this.props.history.push(`/cities/${url}`);
+  handleChange = (selectedOption) => {
+    this.setState({ selectedOption: selectedOption });
   };
 
   render() {
     const { selectedOption } = this.state;
-    const { selectedCity } = this.props;
-
     return (
-      <Select
-        styles={selectedCity ? smallSearchbar : customStyles}
-        placeholder={selectedCity || "Select City"}
-        value={selectedOption}
-        onChange={this.handleChange}
-        options={options}
-        className="city-select-dropdown"
-      />
+      <div className="search-bar">
+        <div className="select-city-large">
+          <div className="select-div">
+            <Select
+              styles={customStyles}
+              placeholder="Select City"
+              value={selectedOption}
+              onChange={this.handleChange}
+              options={options}
+            />
+          </div>
+        </div>
+        <div className="select-experience-large">
+          <input
+            type="text"
+            placeholder="Search for experiences"
+            onChange={this.changeExperience}
+            value={this.state.experience}
+          />
+          <i className="fas fa-search" />
+        </div>
+        <button id="go">Let's Go</button>
+      </div>
     );
   }
 }
