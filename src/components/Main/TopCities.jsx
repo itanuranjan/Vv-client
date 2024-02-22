@@ -9,7 +9,7 @@ import './top-cities.css';
 class TopCities extends Component {
   render() {
     return (
-      <div>
+      <div >
         <div className="top-cities-wrapper">
           <h1>Top Cities on VentureVibes</h1>
           <hr
@@ -70,7 +70,7 @@ class CitySlider extends React.Component {
             slidesToShow: 5,
             slidesToScroll: 5,
             infinite: true,
-            dots: true,
+            // dots: true,
             nextArrow: <Right />,
       prevArrow: <Left />,
           }
@@ -88,7 +88,8 @@ class CitySlider extends React.Component {
           breakpoint: 480,
           settings: {
             slidesToShow: 1.5,
-            slidesToScroll: 2
+            slidesToScroll: 1,
+            initialSlide: 1
           }
         }
       ]
