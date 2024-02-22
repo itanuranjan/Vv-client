@@ -11,7 +11,7 @@ class TopCities extends Component {
     return (
       <div>
         <div className="top-cities-wrapper">
-          <h1>Top Cities on Headout</h1>
+          <h1>Top Cities on VentureVibes</h1>
           <hr
             style={{
               backgroundColor: '#ffbb58',
@@ -49,7 +49,35 @@ class CitySlider extends React.Component {
       slidesToShow: 5,
       slidesToScroll: 5,
       nextArrow: <Right />,
-      prevArrow: <Left />
+      prevArrow: <Left />,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    
     };
     return (
       <Slider {...settings}>
