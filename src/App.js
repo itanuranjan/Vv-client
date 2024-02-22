@@ -17,6 +17,9 @@ function App() {
     <Router>
     
       <Navbar />
+      
+          {/* <Searchbar/> */}
+        
       <TopCities/>
       {/* <Searchbar /> */}
       {/* <Carousel/> */}

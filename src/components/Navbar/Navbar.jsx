@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import Searchbar from "../Main/Searchbar";
 import {
   AppBar,
   IconButton,
@@ -44,7 +45,14 @@ function Navbar() {
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
         >
           VentureVibes
+          
         </Typography>
+
+        <Box sx={{display: { xs: "none", md: "flex" }}}>
+          <Searchbar/>
+        </Box>
+
+        
 
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
           <Button component={Link} to="/" color="inherit">Home</Button>
