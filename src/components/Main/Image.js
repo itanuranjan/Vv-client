@@ -13,7 +13,7 @@ const Images = [
         alt: "Image 1",
         title: "Lamborghini Huracan Performante",
         description:
-          "The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before.",
+          "Anuranjan",
       },
     {
         id: 2,
@@ -21,7 +21,7 @@ const Images = [
         alt: "Image 2",
         title: "Lamborghini Huracan Performante",
         description:
-          "The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before.",
+          "Akanksha",
       },
     {
         id: 3,

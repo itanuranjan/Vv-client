@@ -87,7 +87,7 @@ class CitySlider extends React.Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1.5,
+            slidesToShow: 2,
             slidesToScroll: 1,
             initialSlide: 1
           }
