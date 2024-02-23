@@ -1,0 +1,77 @@
+/* hero.css */
+
+.hero-container {
+    position: relative;
+  }
+  
+  .hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Add any additional styling you need for dots, etc. */
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .slick-dots button {
+    font-size: 1rem;
+    color: #fff;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .slick-dots button.slick-active {
+    background: #ff6600;
+    transform: scale(1.3);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .slider-image {
+      height: 35vh;
+    }
+  }
+  

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Searchbar from './components/Main/Searchbar';
 import TopCities from './components/Main/TopCities';
+import Hero from './components/Main/Hero';
 // import Carousel from './components/Carousel/Carousel';
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -17,6 +18,7 @@ function App() {
     <Router>
     
       <Navbar />
+      <Hero/>
       
           {/* <Searchbar/> */}
         
