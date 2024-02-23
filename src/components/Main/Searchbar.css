@@ -142,14 +142,21 @@
   /* Responsive Styles */
 @media only screen and (max-width: 600px) {
   .select-experience-large input {
-    width: 90%;
+    width: 150px;
   }
 
   .search-bar {
-   
     position: absolute;
-    top: 20%;
+    top: 23%;
     /* height: 40px; */
+    margin: 0 0;
+  }
+  .select-experience-large input:focus-within {
+    width: 160px;
+  }
+  #go {
+    width: 70px;
+    margin-right: 0;
   }
 }
   
