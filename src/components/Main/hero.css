@@ -6,8 +6,9 @@
   
   .hero-section {
     position: relative;
-    width: 100%;
+    width: 99%;
     overflow: hidden;
+    border-radius: 50px;
   }
   
   .slider-image {
@@ -71,7 +72,7 @@
   
   @media only screen and (max-width: 600px) {
     .slider-image {
-      height: 35vh;
+      height: 25vh;
     }
   }
   

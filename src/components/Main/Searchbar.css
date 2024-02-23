@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     /* margin-top: -28px; */
+    border-radius: 20px;
   }
   
   .search-bar {
@@ -147,7 +148,7 @@
 
   .search-bar {
     position: absolute;
-    top: 23%;
+    top: 19%;
     /* height: 40px; */
     margin: 0 0;
   }
