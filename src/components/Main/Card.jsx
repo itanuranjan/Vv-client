@@ -12,7 +12,7 @@ class TopCities extends Component {
       return (
         <div >
           <div className="top-cities-wrapper">
-            <h1>Top Cities on VentureVibes</h1>
+            <h3 >Top Cities on VentureVibes</h3>
             <hr
               style={{
                 backgroundColor: '#ffbb58',
@@ -22,6 +22,7 @@ class TopCities extends Component {
                 marginTop: '0px',
                 marginLeft: '0px',
                 marginBottom: '20px'
+                
               }}
             />
             <div className="top-cities-carousel-wrap">
@@ -57,6 +58,8 @@ class CitySlider extends React.Component {
           slidesToScroll: 3,
           infinite: true,
           dots: true,
+          nextArrow: <Right />,
+      prevArrow: <Left />,
         }
       },
       {
@@ -65,6 +68,8 @@ class CitySlider extends React.Component {
           slidesToShow: 5,
           slidesToScroll: 5,
           infinite: true,
+          nextArrow: <Right />,
+      prevArrow: <Left />,
         }
       },
       {
@@ -89,7 +94,7 @@ class CitySlider extends React.Component {
     <Slider {...settings}>
       {topCitiesData &&
         topCitiesData.map(({ id, city, url, description, route }) => (
-          <Link
+          <Link 
             to={`/cities/${route}`}
             key={id}
             className="link"
@@ -117,7 +122,7 @@ class CityCard extends React.Component {
             />
             <div className="city-details">
               <div id="triangle" />
-              <p>{this.props.city}</p>
+              <h3 style={{ textDecoration: 'none' }}>{this.props.city}</h3>
               <div id="city-hidden">
                 <p>{this.props.description}</p>
               </div>
