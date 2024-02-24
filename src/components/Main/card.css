@@ -1,0 +1,60 @@
+/* General styles */
+.city-card-wrapper {
+    margin: 10px;
+  }
+  
+  .city-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .city-card-img {
+    height: 200px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .city-details {
+    padding: 10px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 1344px) {
+    .city-card-img {
+      height: 150px; /* Adjust as needed */
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .city-card-img {
+      height: 120px; /* Adjust as needed */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .city-card {
+      width: 80%; /* Adjust as needed */
+      margin: 10px auto;
+    }
+  
+    .city-card-img {
+      height: 100px; /* Adjust as needed */
+    }
+  
+    .city-details {
+      font-size: 12px; /* Adjust as needed */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .city-card-img {
+      height: 80px; /* Adjust as needed */
+    }
+  
+    .city-details {
+      font-size: 10px; /* Adjust as needed */
+    }
+  }
+  
