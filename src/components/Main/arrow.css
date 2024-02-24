@@ -32,11 +32,12 @@
     top: 45%;
     right: -10px;
     background: #fff;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 2em;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    margin-right: 10px;
   }
   
   .slick-arrow-right:hover {

@@ -11,33 +11,33 @@ const Images = [
         id: 1,
         src: image1,
         alt: "Image 1",
-        title: "Lamborghini Huracan Performante",
-        description:
-          "Anuranjan",
+        // title: "Lamborghini Huracan Performante",
+        // description:
+        //   "Anuranjan",
       },
     {
         id: 2,
         src: image2,
         alt: "Image 2",
-        title: "Lamborghini Huracan Performante",
-        description:
-          "Akanksha",
+      //   title: "Lamborghini Huracan Performante",
+      //   description:
+      //     "Akanksha",
       },
     {
         id: 3,
         src: image3,
         alt: "Image 3",
-        title: "Lamborghini Huracan Performante",
-        description:
-          "The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before.",
+        // title: "Lamborghini Huracan Performante",
+        // description:
+        //   "The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before.",
       },
     {
         id: 4,
         src: image4,
         alt: "Image 4",
-        title: "Lamborghini Huracan Performante",
-        description:
-          "The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before.",
+        // title: "Lamborghini Huracan Performante",
+        // description:
+        //   "The Huracán Performante has reworked the concept of super sports cars and taken the notion of performance to levels never seen before.",
       },
     
   ];
