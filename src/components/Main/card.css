@@ -20,7 +20,7 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .city-card-img {
     height: 200px; /* Adjust as needed */
     background-size: cover;
@@ -30,9 +30,9 @@
   .city-details {
     padding: 10px;
   }
-  .card-link h3{
-  text-decoration: none;
-  /* color: inherit;  */
+  .card-link{
+    color: inherit;
+    text-decoration: inherit;
 }
   
   /* Responsive styles */

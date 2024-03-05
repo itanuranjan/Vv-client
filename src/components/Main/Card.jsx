@@ -94,7 +94,8 @@ class CitySlider extends React.Component {
     <Slider {...settings}>
       {topCitiesData &&
         topCitiesData.map(({ id, city, url, description, route }) => (
-          <Link 
+          <Link  style={{ textDecoration: 'none', color: 'white' }}
+
             to={`/cities/${route}`}
             key={id}
             className="link"
@@ -113,7 +114,7 @@ class CityCard extends React.Component {
     return (
       <div className="city-card-wrapper">
         <div className="city-card">
-          <Link to={`/cities/${this.props.route}`} className="card-link">
+          <Link style={{ textDecoration: 'none', color: 'white' }} to={`/cities/${this.props.route}`} className="card-link">
             <div
               className="city-card-img"
               style={{
