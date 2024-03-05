@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Select from "react-select";
 import "./Searchbar.css";
 // import Background from './Background';
@@ -81,7 +81,7 @@ class Searchbar extends Component {
             onChange={this.changeExperience}
             value={this.state.experience}
           />
-          <i className="fas fa-search" />
+          {/* <i className="fas fa-search" /> */}
         </div>
         <button id="go">Let's Go</button>
       </div>
