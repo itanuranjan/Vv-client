@@ -28,7 +28,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" >
       <Toolbar>
         <IconButton
           size="large"
@@ -55,9 +55,9 @@ function Navbar() {
         
 
         <Box sx={{ display: { xs: "none", md: "flex" } }}>
-          <Button component={Link} to="/" color="inherit">Home</Button>
+          {/* <Button component={Link} to="/" color="inherit">Home</Button>
           <Button component={Link} to="/about" color="inherit">About</Button>
-          <Button component={Link} to="/features" color="inherit">Feature</Button>
+          <Button component={Link} to="/features" color="inherit">Feature</Button> */}
           <Button component={Link} to="/login" color="inherit">Login</Button>
         </Box>
 
