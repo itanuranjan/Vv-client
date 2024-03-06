@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './CardCarousel.css';
+import '../Styles/CardCarousel.css';
 import { Left, Right } from './Arrows';
 // import NewYork from './NewYork';
 
@@ -39,10 +39,10 @@ class ResponsiveCardCarousel extends React.Component {
     const cardData = [
       {
         id: 1,
-        title: 'Card 1',
+        title: 'New York',
         description: 'Description for Card 1',
         imageUrl: 'https://placekitten.com/300/200', // Replace with your actual image URL
-        route: './new-york',
+        route: 'new-york',
       },
       {
         id: 2,
@@ -77,11 +77,11 @@ class ResponsiveCardCarousel extends React.Component {
 
     return (
       <div className="responsive-card-carousel-wrapper">
-      <h3>Explore India's Top Destinations</h3>
+        <h3>Explore India's Top Destinations</h3>
         <Slider {...settings}>
           {cardData.map((card) => (
             <Link key={card.id} to={`/cards/${card.route}`} className="card-link">
-              <div className="card" >
+              <div className="card">
                 <img src={card.imageUrl} alt={card.title} />
                 <h3>{card.title}</h3>
                 <p>{card.description}</p>

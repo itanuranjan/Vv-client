@@ -1,0 +1,30 @@
+/* Add these styles to your existing CSS */
+
+.responsive-gallery-container {
+    margin: 20px;
+    display: block;
+    border-radius: 10px;
+    /* overflow: hidden;  */
+  }
+  h2{
+    margin-bottom: 20px;
+  }
+  
+  .responsive-gallery-column {
+    display: inline-block;
+    vertical-align: top;
+    /* margin: 5px; Add some margin between columns */
+  }
+  
+  .responsive-gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  

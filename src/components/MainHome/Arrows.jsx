@@ -1,5 +1,5 @@
 import React from 'react';
-import './arrow.css';
+import '../Styles/arrow.css';
 
 export const Left = props => {
   const { style, onClick } = props;

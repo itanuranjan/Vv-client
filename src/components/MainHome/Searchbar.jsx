@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from 'react-router-dom';
 import Select from "react-select";
-import "./Searchbar.css";
+import "../Styles/Searchbar.css";
 // import Background from './Background';
 
 const options = [

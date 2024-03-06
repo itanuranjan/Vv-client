@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Images from "./Image";
-import "./hero.css";
+import "../Styles/hero.css";
 import Searchbar from "./Searchbar";
 
 const Hero = () => {
