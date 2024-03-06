@@ -5,13 +5,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Searchbar from './components/Main/Searchbar';
 // import TopCities from './components/Main/TopCities';
-import Card from './components/Main/Card';
+// import Card from './components/Main/Card';
+import Card1 from './components/Main/Card1';
 import Hero from './components/Main/Hero';
 // import Carousel from './components/Carousel/Carousel';
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Features from "./components/pages/Features";
 import Login from "./components/pages/Login";
+import NewYork from "./components/Main/NewYork"
+import ResponsiveCardCarousel from './components/Main/Card1';
 
 function App() {
   return (
@@ -24,7 +27,8 @@ function App() {
           {/* <Searchbar/> */}
         
       {/* <TopCities/> */}
-      <Card/>
+      {/* <Card/> */}
+      <Card1/>
       {/* <Searchbar /> */}
       {/* <Carousel/> */}
       <Routes>
@@ -32,6 +36,9 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/features" element={<Features/>} />
         <Route path="/login" element={<Login/>} />
+
+        <Route path="/" exact component={ResponsiveCardCarousel} />
+          <Route path="/cards/new-york" component={NewYork} />
       </Routes>
     </Router>
   );
