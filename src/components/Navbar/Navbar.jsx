@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import Searchbar from "../Main/Searchbar";
+import Searchbar from "../MainHome/Searchbar";
 import {
   AppBar,
   IconButton,
