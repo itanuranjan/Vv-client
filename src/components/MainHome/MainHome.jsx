@@ -19,14 +19,14 @@ class MainHome extends Component{
         return(
             <div >
             {/* <Navbar/> */}
-            <Navbar1/>
+            {/* <Navbar1/> */}
             <Hero/>
             <ResponsiveCardCarousel/>
             <TopRecommendations/>
             <Card3/>
             <ResponsiveImageGallery/>
             <CustomReviewCard/>
-            <Footer/>
+            {/* <Footer/> */}
 
             
             </div>
