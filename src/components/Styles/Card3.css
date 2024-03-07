@@ -1,0 +1,54 @@
+/* Card3.css */
+
+.card3-carousel-container {
+  max-width: 95%;
+  margin: 20px auto;
+}
+.card3-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card3 {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 4px;
+    height: 330px;
+  }
+}
+.card3-dis{
+    margin-left: 10px;
+}
+h3 {
+  font-size: 18px;
+  /* text-align: center; */
+  color: #020202;
+  margin: 10px 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .card3-carousel-container {
+    max-width: 87%;
+    /* margin: 20px auto; */
+  }
+  .card3{
+  img{
+    height: 220px;
+  }
+}
+}

@@ -3,9 +3,6 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import '../Styles/ResponsiveImageGallery.css';
 
 const images = [
-  // 'https://unsplash.it/200/300?image=1050',
-  // 'https://unsplash.it/200/300?image=1050',
-  // 'https://unsplash.it/200/300?image=1050',
   'https://ucarecdn.com/5bec9f05-99c0-4d75-9170-f7072d7fb432/Snapchat469456077.jpg',
   'https://ucarecdn.com/9831e1c8-c4a2-4cc4-a31e-6538175bd0f5/Snapchat677437992.jpg',
   'https://ucarecdn.com/2fca9dc5-b89b-4528-bbd7-fa83f21d0837/Snapchat931780964.jpg',
@@ -18,23 +15,13 @@ const images = [
   'https://ucarecdn.com/df7c5227-0d49-474c-b93a-858eec42eabd/Snapchat1885368327.jpg',
   'https://ucarecdn.com/8fd0ba2a-ebe2-4ad9-99d8-5c61ecc4bf67/Snapchat1165264034.jpg',
   'https://ucarecdn.com/a3cf3905-074d-4f92-8d02-da047b214431/Snapchat1236441475.jpg',
-  // 'https://unsplash.it/200/300?image=1050',
-  // 'https://unsplash.it/200/300?image=1050',
-  // 'https://unsplash.it/400/400?image=1039',
-  // 'https://unsplash.it/400/300?image=1017',
-  // 'https://unsplash.it/200/200?image=997',
-  // 'https://unsplash.it/500/400?image=287',
-  // 'https://unsplash.it/400/500?image=955',
-  // 'https://unsplash.it/200/300?image=916',
-  // 'https://unsplash.it/300/300?image=110',
-  // 'https://unsplash.it/300/300?image=206',
 ];
 
 const ResponsiveImageGallery = () => {
   return (
     
     <div className="responsive-gallery-container">
-    <h2>Image Galary</h2>
+    <h2>Our Memories</h2>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 3, 750: 2, 900: 6 }}>
         <Masonry gutter="10px">
           {images.map((image, i) => (

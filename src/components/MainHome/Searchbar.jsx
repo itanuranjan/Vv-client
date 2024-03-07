@@ -2,24 +2,14 @@ import React, { Component } from "react";
 // import { Link } from 'react-router-dom';
 import Select from "react-select";
 import "../Styles/Searchbar.css";
-// import Background from './Background';
 
 const options = [
-  { value: "New York", label: "New York" },
-  { value: "Las Vegas", label: "Las Vegas" },
-  { value: "Rome", label: "Rome" },
-  { value: "Paris", label: "Paris" },
-  { value: "London", label: "London" },
-  { value: "Dubai", label: "Dubai" },
-  { value: "Barcelona", label: "Barcelona" },
-  { value: "Madrid", label: "Madrid" },
-  { value: "Singapore", label: "Singapore" },
-  { value: "Venice", label: "Venice" },
-  { value: "Milan", label: "Milan" },
-  { value: "Naples", label: "Naples" },
-  { value: "Budapest", label: "Budapest" },
-  { value: "Edinburg", label: "Edinburg" },
-  { value: "Florence", label: "Florence" },
+  { value: "Himachal", label: "Himachal" },
+  { value: "Uttrakhand", label: "Uttrakhand" },
+  { value: "Chandigarh", label: "Chandigarh" },
+  { value: "Delhi", label: "Delhi" },
+  { value: "Bihar", label: "Bihar" },
+  
 ];
 
 const customStyles = {
