@@ -1,0 +1,51 @@
+/* CustomReviewCard.css */
+.customer-review-card {
+    width: 100%;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-size: cover; /* Added to ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+  }
+  
+  .card-content {
+    flex-grow: 1;
+    padding: 16px;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .review-header h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .review-header p {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .rating {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Add media queries for responsiveness if needed */
+  @media screen and (max-width: 768px) {
+    .customer-review-card {
+      flex-direction: column;
+    }
+  }
+  

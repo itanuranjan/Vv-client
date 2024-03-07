@@ -1,17 +1,18 @@
 /* CardCarousel.css */
 .responsive-card-carousel-wrapper {
-  width: 98%;
-  margin-left: 13px;
+  max-width: 95%;
+    margin: 20px auto;
 }
+
 .card-link {
   text-decoration: none;
-  color: inherit; /* Inherit the color from the parent */
+  color: inherit;
 }
 
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
-  /* padding:4px; */
+  height: 240px;
   margin: 8px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -25,17 +26,17 @@
     width: 100%;
     border-radius: 4px;
     margin-bottom: 8px;
+    height: 160px;
   }
 
   h3 {
     font-size: 14px;
-    /* margin-bottom: 8px; */
     text-align: center;
     color: red;
   }
 
   p {
-    font-size: 10px;
+    font-size: 12px; /* Adjusted font size */
     color: #0d0909;
     text-align: center;
     margin-bottom: 8px;
@@ -45,10 +46,10 @@
 @media screen and (max-width: 600px) {
   .responsive-card-carousel-wrapper {
     width: 90%;
-    /* height: 200px; */
-    /* margin-left: 13px; */
   }
+
   .card {
-    height: 170px;
+    /* height: 190px; */
   }
+  
 }

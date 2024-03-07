@@ -13,7 +13,7 @@
   
   .slider-image {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
   }
   
   .slider-content {
@@ -72,7 +72,7 @@
   
   @media only screen and (max-width: 600px) {
     .slider-image {
-      height: 25vh;
+      height: 30vh;
     }
   }
   

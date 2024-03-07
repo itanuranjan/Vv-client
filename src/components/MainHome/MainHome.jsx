@@ -3,8 +3,11 @@ import Navbar from '../Navbar/Navbar';
 import Navbar1 from '../Navbar/Navbar1';
 import Hero from './Hero';
 import ResponsiveCardCarousel from "./ResponsiveCardCarousel";
+import TopRecommendations from './TopRecommendations';
 import ResponsiveImageGallery from './ResponsiveImageGallery';
 import Footer from '../Footer/Footer';
+import Card3 from './Card3';
+import CustomReviewCard from './Review';
 
 
 
@@ -19,7 +22,10 @@ class MainHome extends Component{
             <Navbar1/>
             <Hero/>
             <ResponsiveCardCarousel/>
+            <TopRecommendations/>
+            <Card3/>
             <ResponsiveImageGallery/>
+            <CustomReviewCard/>
             <Footer/>
 
             

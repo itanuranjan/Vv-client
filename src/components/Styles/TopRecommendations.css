@@ -1,0 +1,71 @@
+/* TopRecommendations.css */
+
+.custom-carousel-wrapper {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  
+  
+  .custom-card-link {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+  
+  .custom-card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    margin-top: 0px;
+    /* height: 570px; */
+    
+  }
+
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .custom-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+    height: 210px;
+  }
+  
+  .custom-card h3 {
+    margin: 15px;
+    font-size: 18px;
+    text-align: center;
+    color: blue;
+  }
+  
+  .custom-card p {
+    margin: 0 15px 15px;
+    /* text-align: center; */
+    /* color: black; */
+  }
+  
+  .custom-card-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+    color: red;
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .custom-carousel-wrapper {
+        max-width: 87%;
+        margin: 20px auto;
+      }
+    .custom-card{
+        /* height: 530px; */
+    }
+  }
+  
