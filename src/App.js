@@ -10,24 +10,28 @@ import ImageCollection from "./components/MainHome/ResponsiveImageGallery";
 // import Gallery from "./components/MainHome/Gallery";
 import ResponsiveCardCarousel from "./components/MainHome/ResponsiveCardCarousel";
 import Footer from "./components/Footer/Footer";
+import Navbar1 from './components/Navbar/Navbar1';
 
 function App() {
   return (
     <Router>
-      <MainHome />
+      {/* <MainHome /> */}
       {/* <ImageCollection /> */}
       {/* <Gallery /> */}
-      {/* <Footer/> */}
       
+      <Navbar1/>
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/features" element={<Features />} />
+        <Route path="/" exact element={<MainHome />} />
         <Route path="/login" element={<Login />} />
 
         <Route path="/" exact element={<ResponsiveCardCarousel/> } />
-        <Route path="/cards/new-york" element={<NewYork />} />
+        <Route path="/cities/himachal" element={<NewYork />} />
+        <Route path="/cities/uttrakhand" element={<NewYork />} />
+        <Route path="/cities/chandigarh" element={<NewYork />} />
+        <Route path="/cities/delhi" element={<NewYork />} />
+        <Route path="/cities/bihar" element={<NewYork />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
