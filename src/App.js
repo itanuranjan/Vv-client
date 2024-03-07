@@ -15,9 +15,9 @@ function App() {
   return (
     <Router>
       <MainHome />
-      <ImageCollection />
+      {/* <ImageCollection /> */}
       {/* <Gallery /> */}
-      <Footer/>
+      {/* <Footer/> */}
       
       <Routes>
         <Route path="/" exact element={<Home />} />

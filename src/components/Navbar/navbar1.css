@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -80,7 +81,7 @@ body {
 
 @media (max-width: 600px) {
     .navbar {
-        width: 95%;
+        /* width: 95%; */
         height: 60px;
         background-color: powderblue;
         position: fixed;

@@ -1,62 +1,54 @@
 /* CardCarousel.css */
-.responsive-card-carousel-wrapper{
-  width: 97%;
+.responsive-card-carousel-wrapper {
+  width: 98%;
   margin-left: 13px;
 }
 .card-link {
-    text-decoration: none;
-    color: inherit; /* Inherit the color from the parent */
-  
-    
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* padding:4px; */
+  margin: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
   }
-  
+
+  img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 14px;
+    /* margin-bottom: 8px; */
+    text-align: center;
+    color: red;
+  }
+
+  p {
+    font-size: 10px;
+    color: #0d0909;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-card-carousel-wrapper {
+    width: 90%;
+    /* height: 200px; */
+    /* margin-left: 13px; */
+  }
   .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    /* padding:4px; */
-    margin: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  
-    &:hover {
-      transform: scale(1.05);
-    }
-  
-    img {
-      width: 100%;
-      border-radius: 4px;
-      margin-bottom: 8px;
-    }
-  
-    h3 {
-      font-size: 14px;
-      /* margin-bottom: 8px; */
-      text-align: center;
-      color: red;
-    }
-  
-    p {
-      font-size: 10px;
-      color: #0d0909;
-      text-align: center;
-      margin-bottom: 8px;
-    }
+    height: 170px;
   }
-
-  @media screen and (max-width: 600px) {
-
-    .responsive-card-carousel-wrapper{
-      /* width: 90%; */
-      /* height: 200px; */
-      /* margin-left: 13px; */
-      
-    }
-    .card{
-      height: 170px;
-    }
-
-
-  }
-
-  
+}

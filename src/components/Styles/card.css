@@ -1,4 +1,7 @@
 /* General styles */
+.top-cities-carousel-wrap{
+  width: 98%;
+}
 .city-card-wrapper {
     margin: 10px;
   }
@@ -49,6 +52,9 @@
   }
   
   @media screen and (max-width: 600px) {
+    .top-cities-carousel-wrap{
+      width: 93%;
+    }
     .city-card {
       /* width: 80%;  */
       margin: 10px auto;
