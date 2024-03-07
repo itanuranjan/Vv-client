@@ -18,7 +18,7 @@ function App() {
       {/* <MainHome /> */}
       {/* <ImageCollection /> */}
       {/* <Gallery /> */}
-      
+      {/* <Header/> */}
       <Navbar1/>
       <Routes>
         <Route path="/" exact element={<MainHome />} />
