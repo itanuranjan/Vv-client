@@ -19,7 +19,7 @@ class ResponsiveCardCarousel extends React.Component {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2.06,
+            slidesToShow: 2.0,
             slidesToScroll: 2,
           },
         },
