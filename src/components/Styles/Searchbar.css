@@ -99,10 +99,6 @@
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
-  .select-experience-large input {
-    /* width: 160px; */
-  }
-
   .search-bar {
     width: 90%;
     top: 20%;

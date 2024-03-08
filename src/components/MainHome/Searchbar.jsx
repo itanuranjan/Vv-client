@@ -9,12 +9,43 @@ const Searchbar = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const options = [
-    { value: 'himachal', label: 'Himachal' },
-    { value: 'Uttrakhand', label: 'Uttrakhand' },
-    { value: 'Chandigarh', label: 'Chandigarh' },
-    { value: 'Delhi', label: 'Delhi' },
-    { value: 'Bihar', label: 'Bihar' },
+    { "value": "varanasi", "label": "Varanasi" },
+    { "value": "new-delhi", "label": "New Delhi" },
+    { "value": "mumbai", "label": "Mumbai" },
+    { "value": "goa", "label": "Goa" },
+    { "value": "agra", "label": "Agra" },
+    { "value": "rishikesh", "label": "Rishikesh" },
+    { "value": "jaipur", "label": "Jaipur" },
+    { "value": "kolkata", "label": "Kolkata" },
+    { "value": "puducherry", "label": "Puducherry" },
+    { "value": "hyderabad", "label": "Hyderabad" },
+    { "value": "udaipur", "label": "Udaipur" },
+    { "value": "amritsar", "label": "Amritsar" },
+    { "value": "jodhpur", "label": "Jodhpur" },
+    { "value": "shimla", "label": "Shimla" },
+    { "value": "darjeeling", "label": "Darjeeling" },
+    { "value": "chennai", "label": "Chennai" },
+    { "value": "manali", "label": "Manali" },
+    { "value": "mahabaleshwar", "label": "Mahabaleshwar" },
+    { "value": "jaisalmer", "label": "Jaisalmer" },
+    { "value": "kochi", "label": "Kochi" },
+    { "value": "nainital", "label": "Nainital" },
+    { "value": "bengaluru", "label": "Bengaluru" },
+    { "value": "mysuru", "label": "Mysuru" },
+    { "value": "gangtok", "label": "Gangtok" },
+    { "value": "mathura", "label": "Mathura" },
+    { "value": "visakhapatnam", "label": "Visakhapatnam" },
+    { "value": "kasol", "label": "Kasol" },
+    { "value": "mussoorie", "label": "Mussoorie" },
+    { "value": "srinagar", "label": "Srinagar" },
+    { "value": "rameswaram", "label": "Rameswaram" },
+    { "value": "tirupati", "label": "Tirupati" },
+    { "value": "leh", "label": "Leh" },
+    { "value": "madurai", "label": "Madurai" },
+    { "value": "panaji", "label": "Panaji" },
+    { "value": "shillong", "label": "Shillong" }
   ];
+  
 
   const handleChange = (selectedOption) => {
     setSelectedOption(selectedOption);
