@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar1 from './components/Navbar/Navbar1';
 import Varanasi from "./components/Cities/Varanasi/Varanasi";
 import PlaceDetails from "./components/Cities/Varanasi/PlaceDetails";
+import InputData from "./components/InputData";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       {/* <ImageCollection /> */}
       {/* <Gallery /> */}
       {/* <Header/> */}
-      <Navbar1/>
+      {/* <Navbar1/> */}
       <Routes>
         <Route path="/" exact element={<MainHome />} />
         <Route path="/login" element={<Login />} />
@@ -33,6 +34,7 @@ function App() {
         <Route path="/cities/delhi" element={<TopPlacesVaranasi/>} />
         <Route path="/cities/bihar" element={<TopPlacesVaranasi />} />
         <Route path="/cards/kashi-vishwanath-temple" element={<PlaceDetails />} />
+        <Route path="/inputdata" element={<InputData />} />
       </Routes>
       <Footer/>
     </Router>
