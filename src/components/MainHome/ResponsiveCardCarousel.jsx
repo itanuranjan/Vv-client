@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/CardCarousel.css";
 import { Left, Right } from "./Arrows";
-import { cardData } from "./Image";
+import axios from "axios";  // Import axios
 
 class ResponsiveCardCarousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      citiesData: [],  // State to hold the fetched data
+    };
+  }
+
+  componentDidMount() {
+    // Fetch data when the component mounts
+    this.fetchData();
+  }
+
+  fetchData() {
+    // Use axios to fetch data from your server (replace with your server URL)
+    axios.get("https://venturevibe-server.onrender.com/api/cities")  // Replace with your actual server URL
+      .then((response) => {
+        this.setState({ citiesData: response.data });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }
+
   render() {
+    const { citiesData } = this.state;
+
     const settings = {
       infinite: true,
       speed: 500,
@@ -40,16 +65,16 @@ class ResponsiveCardCarousel extends React.Component {
       <div className="responsive-card-carousel-wrapper">
         <h3>India's Top Destinations</h3>
         <Slider {...settings}>
-          {cardData.map((cities) => (
+          {citiesData.map((city) => (
             <Link
-              key={cities.id}
-              to={`/cities/${cities.route}`}
+              key={city.id}
+              to={`/cities/${city.route}`}
               className="card-link"
             >
               <div className="card">
-                <img src={cities.imageUrl} alt={cities.title} />
-                <h3>{cities.title}</h3>
-                <p>{cities.description}</p>
+                <img src={city.imageUrl} alt={city.title} />
+                <h3>{city.title}</h3>
+                <p>{city.description}</p>
               </div>
             </Link>
           ))}
