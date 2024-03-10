@@ -14,6 +14,7 @@ import Navbar1 from './components/Navbar/Navbar1';
 import Varanasi from "./components/Cities/Varanasi/Varanasi";
 import PlaceDetails from "./components/Cities/Varanasi/PlaceDetails";
 import InputData from "./components/InputData";
+import Admin from "./admin/Admin";
 
 function App() {
   return (
@@ -22,19 +23,20 @@ function App() {
       {/* <ImageCollection /> */}
       {/* <Gallery /> */}
       {/* <Header/> */}
-      {/* <Navbar1/> */}
+      <Navbar1/>
       <Routes>
         <Route path="/" exact element={<MainHome />} />
         <Route path="/login" element={<Login />} />
 
         <Route path="/" exact element={<ResponsiveCardCarousel/> } />
+        <Route path="/admin" exact element={<Admin/> } />
         <Route path="/cities/varanasi" element={<Varanasi />} />
         <Route path="/cities/uttrakhand" element={<TopPlacesVaranasi />} />
         <Route path="/cities/chandigarh" element={<TopPlacesVaranasi />} />
         <Route path="/cities/delhi" element={<TopPlacesVaranasi/>} />
         <Route path="/cities/bihar" element={<TopPlacesVaranasi />} />
         <Route path="/cards/kashi-vishwanath-temple" element={<PlaceDetails />} />
-        <Route path="/inputdata" element={<InputData />} />
+        <Route path="/admin/add" element={<InputData />} />
       </Routes>
       <Footer/>
     </Router>

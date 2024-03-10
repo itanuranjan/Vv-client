@@ -47,6 +47,7 @@
 @media screen and (max-width: 600px) {
   .responsive-card-carousel-wrapper {
     width: 87%;
+    /* z-index: -2; */
   }
 
   .card {

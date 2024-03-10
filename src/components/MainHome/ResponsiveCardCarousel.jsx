@@ -22,7 +22,7 @@ class ResponsiveCardCarousel extends React.Component {
 
   fetchData() {
     // Use axios to fetch data from your server (replace with your server URL)
-    axios.get("https://venturevibe-server.onrender.com/api/cities")  // Replace with your actual server URL
+    axios.get("http://localhost:5000/api/cities")  // Replace with your actual server URL
       .then((response) => {
         this.setState({ citiesData: response.data });
       })
@@ -43,10 +43,12 @@ class ResponsiveCardCarousel extends React.Component {
       responsive: [
         {
           breakpoint: 768,
-          settings: {
-            slidesToShow: 2.0,
-            slidesToScroll: 2,
-          },
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 0, // Set initialSlide for smaller screens
+        infinite: true,
+      },
         },
         {
           breakpoint: 1344,
