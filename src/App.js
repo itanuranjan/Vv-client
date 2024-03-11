@@ -15,31 +15,11 @@ import Varanasi from "./components/Cities/Varanasi/Varanasi";
 import PlaceDetails from "./components/Cities/Varanasi/PlaceDetails";
 import InputData from "./components/InputData";
 import Admin from "./admin/Admin";
+import CityRoutes from "./CityRoutes";
 
 function App() {
   return (
-    <Router>
-      {/* <MainHome /> */}
-      {/* <ImageCollection /> */}
-      {/* <Gallery /> */}
-      {/* <Header/> */}
-      <Navbar1/>
-      <Routes>
-        <Route path="/" exact element={<MainHome />} />
-        <Route path="/login" element={<Login />} />
-
-        <Route path="/" exact element={<ResponsiveCardCarousel/> } />
-        <Route path="/admin" exact element={<Admin/> } />
-        <Route path="/cities/varanasi" element={<Varanasi />} />
-        <Route path="/cities/uttrakhand" element={<TopPlacesVaranasi />} />
-        <Route path="/cities/chandigarh" element={<TopPlacesVaranasi />} />
-        <Route path="/cities/delhi" element={<TopPlacesVaranasi/>} />
-        <Route path="/cities/bihar" element={<TopPlacesVaranasi />} />
-        <Route path="/cards/kashi-vishwanath-temple" element={<PlaceDetails />} />
-        <Route path="/admin/add" element={<InputData />} />
-      </Routes>
-      <Footer/>
-    </Router>
+   <CityRoutes/>
   );
 }
 

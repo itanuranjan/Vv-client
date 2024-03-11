@@ -256,22 +256,22 @@ export const Images = [
   },
   {
     id: 2,
-    src: "https://ucarecdn.com/e1df82d4-56e7-4d38-9722-e9a7eb9bfdb0/156Vrindavan.jpg",
+    src: "https://ucarecdn.com/19cc03cb-6b76-47fb-a66a-1db56c7ea2b0/premmandir.jpg",
     alt: "Image 2",
   },
   {
     id: 3,
-    src: "https://ucarecdn.com/d71ab50b-d4f7-4681-807e-1acada9a8326/kasiyatra.webp",
+    src: "https://ucarecdn.com/d5820543-8dd8-49a9-b022-36ed4103f780/varanasiaarti.jpg",
     alt: "Image 3",
   },
   {
     id: 4,
-    src: "https://ucarecdn.com/6be3e6d7-b665-4ea4-8cf0-723fc30d3a5a/HillStationsNearUttarakhandCover.webp",
+    src: "https://ucarecdn.com/c77e1c6f-fe71-42c6-b175-3e00be16871e/rammandirdupli.jpg",
     alt: "Image 4",
   },
   {
     id: 5,
-    src: "https://ucarecdn.com/8763ab29-5055-4a37-8a0b-d1739a863766/budhhainbihar.jpg",
+    src: "https://ucarecdn.com/6100971e-ee32-4e35-8fd4-b70f7dfedd7f/varanasighat.jpg",
     alt: "Image 5",
   },
 ];
@@ -348,7 +348,7 @@ export const card3Data = [
     title: "Set your eyes – and lens – on the iconic Taj Mahal",
     city: "Agra",
     imageUrl:
-      "https://ucarecdn.com/7ae6a4df-314f-476a-b7f3-44627fa153da/TajMahalAgra.jpg", // Replace with your actual image URL
+      "https://ucarecdn.com/d2c50b55-9bc0-49ad-9027-d3c4035b740f/md_jerryE4Cx9P3eC2wunsplash.jpg", // Replace with your actual image URL
     route: "card-2",
   },
   {

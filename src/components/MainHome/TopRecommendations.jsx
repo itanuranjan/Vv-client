@@ -5,10 +5,25 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Styles/TopRecommendations.css'; // Change the CSS file name
 import { Left, Right } from './Arrows';
-import { TopRecommendationscardData } from "./Image";
+import { TopRecommendationscardData } from './Image';
 
 class CustomCarousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      expandedCardId: null,
+    };
+  }
+
+  handleKnowMoreClick = (cardId) => {
+    this.setState((prevState) => ({
+      expandedCardId: prevState.expandedCardId === cardId ? null : cardId,
+    }));
+  };
+
   render() {
+    const { expandedCardId } = this.state;
+
     const carouselSettings = {
       infinite: true,
       speed: 500,
@@ -36,20 +51,34 @@ class CustomCarousel extends React.Component {
       ],
     };
 
-    
-
     return (
       <div className="custom-carousel-wrapper">
-        <h2>Top Recommendations <span class="red-heart">&#9825;</span></h2>
+        <h2>
+          Top Recommendations <span className="red-heart">&#9825;</span>
+        </h2>
         <Slider {...carouselSettings}>
           {TopRecommendationscardData.map((card) => (
             <Link key={card.id} to={`/cards/${card.route}`} className="custom-card-link">
-              <div className="custom-card">
+              <div className={`custom-card ${expandedCardId === card.id ? 'expanded' : ''}`}>
                 <img src={card.imageUrl} alt={card.title} />
                 <h3>{card.title}</h3>
-                <p>{card.description}</p>
+                <p>
+                  {expandedCardId === card.id
+                    ? card.fullDescription
+                    : `${card.description.slice(0, 100)}...`}
+                </p>
+                {card.description.length > 100 && (
+                  <button
+                    className="read-more-btn"
+                    onClick={() => this.handleKnowMoreClick(card.id)}
+                  >
+                    {expandedCardId === card.id ? 'Show Less' : 'Show More..'}
+                  </button>
+                )}
                 <div className="custom-card-details">
-                  <p>Ratings<span class="red-star">★</span>: {card.ratings}</p>
+                  <p>
+                    Ratings<span className="red-star">★</span>: {card.ratings}
+                  </p>
                   <p>Price: {card.price}</p>
                 </div>
               </div>
@@ -59,6 +88,7 @@ class CustomCarousel extends React.Component {
       </div>
     );
   }
+  
 }
 
 export default CustomCarousel;
