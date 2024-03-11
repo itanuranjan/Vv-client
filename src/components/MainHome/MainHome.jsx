@@ -4,7 +4,8 @@ import ResponsiveCardCarousel from "./ResponsiveCardCarousel";
 import TopRecommendations from './TopRecommendations';
 import ResponsiveImageGallery from './ResponsiveImageGallery';
 import Card3 from './Card3';
-import CustomReviewCard from './Review';
+// import CustomReviewCard from './Review';
+// import Marquee from './Marquee';
 
 
 
@@ -17,6 +18,7 @@ class MainHome extends Component{
             {/* <Navbar1/> */}
             
             <Hero/>
+            {/* <Marquee/> */}
             <ResponsiveCardCarousel/>
             <TopRecommendations/>
             <Card3/>

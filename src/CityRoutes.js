@@ -1,30 +1,47 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainHome from "./components/MainHome/MainHome";
-import NewYork from "./components/MainHome/NewYork";
+// import MainHome from "./components/MainHome/MainHome";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Features from "./components/pages/Features";
+import Login from "./components/pages/Login";
+import TopPlacesVaranasi from "./components/Cities/Varanasi/Top-PlacesVaranasi"
+import ImageCollection from "./components/MainHome/ResponsiveImageGallery";
+// import Gallery from "./components/MainHome/Gallery";
+import ResponsiveCardCarousel from "./components/MainHome/ResponsiveCardCarousel";
+import Footer from "./components/Footer/Footer";
+import Navbar1 from './components/Navbar/Navbar1';
+import Varanasi from "./components/Cities/Varanasi/Varanasi";
+import PlaceDetails from "./components/Cities/Varanasi/PlaceDetails";
+import InputData from "./components/InputData";
+import Admin from "./admin/Admin";
 
-const CityRoutes = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={MainHome} />
-      <Route exact path="/cities/new-york" component={NewYork} />
-      <Route exact path="/cities/las-vegas" component={MainHome} />
-      <Route exact path="/cities/rome" component={MainHome} />
-      <Route exact path="/cities/paris" component={MainHome} />
-      <Route exact path="/cities/london" component={MainHome} />
-      <Route exact path="/cities/dubai" component={MainHome} />
-      <Route exact path="/cities/barcelona" component={MainHome} />
-      <Route exact path="/cities/madrid" component={MainHome} />
-      <Route exact path="/cities/singapore" component={MainHome} />
-      <Route exact path="/cities/venice" component={MainHome} />
-      <Route exact path="/cities/milan" component={MainHome} />
-      <Route exact path="/cities/naples" component={MainHome} />
-      <Route exact path="/cities/budapest" component={MainHome} />
-      <Route exact path="/cities/edinburg" component={MainHome} />
-      <Route exact path="/cities/florence" component={MainHome} />
-      <Route exact path="/app" component={AppStore} />
-    </Switch>
-  </BrowserRouter>
-);
+function CityRoutes() {
+  return (
+    <Router>
+      {/* <MainHome /> */}
+      {/* <ImageCollection /> */}
+      {/* <Gallery /> */}
+      {/* <Header/> */}
+      <Navbar1/>
+      <Routes>
+        <Route path="/" exact element={<MainHome />} />
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/" exact element={<ResponsiveCardCarousel/> } />
+        <Route path="/admin" exact element={<Admin/> } />
+        <Route path="/cities/varanasi" element={<Varanasi />} />
+        <Route path="/cities/uttrakhand" element={<TopPlacesVaranasi />} />
+        <Route path="/cities/chandigarh" element={<TopPlacesVaranasi />} />
+        <Route path="/cities/delhi" element={<TopPlacesVaranasi/>} />
+        <Route path="/cities/bihar" element={<TopPlacesVaranasi />} />
+        <Route path="/cards/kashi-vishwanath-temple" element={<PlaceDetails />} />
+        <Route path="/admin/add" element={<InputData />} />
+      </Routes>
+      <Footer/>
+    </Router>
+  );
+}
 
 export default CityRoutes;

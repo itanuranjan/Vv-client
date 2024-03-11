@@ -1,0 +1,25 @@
+/* Marquee.css */
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: brown;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marqueeAnimation 15s linear infinite;
+    margin: 0 0;
+    /* border: 2px solid rgb(181, 181, 241); */
+    border-radius: 5px;
+    }
+  
+  @keyframes marqueeAnimation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

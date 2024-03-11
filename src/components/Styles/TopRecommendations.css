@@ -58,6 +58,34 @@
     color: red;
   }
   
+  .custom-card .read-more-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* font-size: 14px; */
+    text-align: right;
+    margin-left: 140px;
+
+  }
+  
+  .custom-card .read-more-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .custom-card.expanded {
+    height: auto; /* Adjust the height as needed */
+  }
+  
+  .custom-card.expanded p {
+    overflow: visible;
+  }
+  
+  
   @media screen and (max-width: 600px) {
 
     .custom-carousel-wrapper {
@@ -66,6 +94,12 @@
       }
     .custom-card{
         /* height: 530px; */
+    }
+
+    .custom-card .read-more-btn {
+      
+      margin-left: 170px;
+  
     }
   }
   
