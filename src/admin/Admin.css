@@ -1,59 +1,40 @@
 /* Admin.css */
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .admin-container {
-    max-width: 800px;
-    margin: 0 auto;
-    /* padding: 20px; */
-    margin-top: 60px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .admin-btn-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .admin-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .admin-btn:hover {
-    background-color: #2980b9;
-  }
-  
-  /* Responsive design */
-  @media only screen and (min-width: 768px) {
-    .admin-container {
-      padding: 40px;
-    }
-  
-    .admin-btn-container {
-      flex-direction: row;
-    }
-  
-    .admin-btn {
-      width: auto;
-    }
-  }
-  
+.admin-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin-top: 60px;
+}
+
+.admin-btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #f7f8f7;
+  background-color: #0077b6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sub-btn {
+  display: block;
+  margin-left: 20px;
+}
+
+.admin-btn:hover,
+.sub-btn:hover {
+  background-color: #0000b6;
+
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}

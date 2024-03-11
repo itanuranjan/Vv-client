@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Hero from './Hero';
-import ResponsiveCardCarousel from "./ResponsiveCardCarousel";
+import TopCities from "./TopCities";
 import TopRecommendations from './TopRecommendations';
 import ResponsiveImageGallery from './ResponsiveImageGallery';
-import Card3 from './Card3';
+import ThingstoDo from './ThingstoDo';
 // import CustomReviewCard from './Review';
 // import Marquee from './Marquee';
 
@@ -19,9 +19,9 @@ class MainHome extends Component{
             
             <Hero/>
             {/* <Marquee/> */}
-            <ResponsiveCardCarousel/>
+            <TopCities/>
             <TopRecommendations/>
-            <Card3/>
+            <ThingstoDo/>
             <ResponsiveImageGallery/>
             {/* <CustomReviewCard/> */}
             {/* <Footer/> */}

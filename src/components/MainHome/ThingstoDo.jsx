@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../Styles/Card3.css";
+import "../Styles/ThingstoDo.css";
 import { Left, Right } from "./Arrows";
 import { card3Data } from "./Image";
 
-class Card3 extends React.Component {
+class ThingstoDo extends React.Component {
   render() {
     const settings = {
       infinite: true,
@@ -41,7 +41,7 @@ class Card3 extends React.Component {
 
     return (
       <div className="card3-carousel-container">
-        <h3>Top Activities to Do</h3>
+        <h3>Things to Do in India</h3>
         <Slider {...settings}>
           {card3Data.map((card) => (
             <Link
@@ -64,4 +64,4 @@ class Card3 extends React.Component {
   }
 }
 
-export default Card3;
+export default ThingstoDo;
