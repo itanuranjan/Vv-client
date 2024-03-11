@@ -1,68 +1,54 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Slider from 'react-slick';
-import { Left, Right } from './Arrows';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './top-cities.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../Styles/CardCarousel.css";
+import { Left, Right } from "./Arrows";
+import axios from "axios";  // Import axios
 
-class TopCities extends Component {
-  render() {
-    return (
-      <div >
-        <div className="top-cities-wrapper">
-          <h1>Top Cities on VentureVibes</h1>
-          <hr
-            style={{
-              backgroundColor: '#ffbb58',
-              width: '75px',
-              height: '2px',
-              border: 'none',
-              marginTop: '0px',
-              marginLeft: '0px',
-              marginBottom: '20px'
-            }}
-          />
-          <div className="top-cities-carousel-wrap">
-            <CitySlider />
-          </div>
-          <hr
-            style={{
-              height: '1px',
-              color: '#e7e7e7',
-              borderTop: 'none',
-              borderLeft: 'none'
-            }}
-          />
-        </div>
-        <hr className="section-divide-hr" />
-      </div>
-    );
+class ResponsiveCardCarousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      citiesData: [],  // State to hold the fetched data
+    };
   }
-}
 
-class CitySlider extends React.Component {
+  componentDidMount() {
+    // Fetch data when the component mounts
+    this.fetchData();
+  }
+
+  fetchData() {
+    // Use axios to fetch data from your server (replace with your server URL)
+    axios.get("https://venturevibe-server.onrender.com/api/cities")  // Replace with your actual server URL
+      .then((response) => {
+        console.log("api fetching")
+        this.setState({ citiesData: response.data });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }
+
   render() {
-    var settings = {
+    const { citiesData } = this.state;
+
+    const settings = {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
       slidesToScroll: 5,
-      // nextArrow: <Right />,
-      // prevArrow: <Left />,
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true,
-            nextArrow: <Right />,
-      prevArrow: <Left />,
-          }
-          
+          breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 0, // Set initialSlide for smaller screens
+      },
         },
         {
           breakpoint: 1344,
@@ -70,194 +56,34 @@ class CitySlider extends React.Component {
             slidesToShow: 5,
             slidesToScroll: 5,
             infinite: true,
-            // dots: true,
             nextArrow: <Right />,
-      prevArrow: <Left />,
-          }
-          
+            prevArrow: <Left />,
+          },
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            // initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            initialSlide: 1
-          }
-        }
-      ]
-    
+      ],
     };
+
     return (
-      <Slider {...settings}>
-        {topCitiesData &&
-          topCitiesData.map(({ id, city, url, description, route }) => (
+      <div className="responsive-card-carousel-wrapper">
+        <h3>Top cities to visit in India</h3>
+        <Slider {...settings}>
+          {citiesData.map((city) => (
             <Link
-              to={{ pathname: `/cities/${route}` }}
-              key={id}
-              className="link"
+              key={city.id}
+              to={`/cities/${city.route}`}
+              className="card-link"
             >
-              <CityCard city={city} url={url} description={description} />
+              <div className="card">
+                <img src={city.imageUrl} alt={city.title} />
+                <h3>{city.title}</h3>
+                <p>{city.description}</p>
+              </div>
             </Link>
           ))}
-      </Slider>
-    );
-  }
-}
-
-class CityCard extends Component {
-  render() {
-    const url = `url(${this.props.url})`;
-    return (
-      <div className="city-card-wrapper">
-        <div className="city-card">
-          <div
-            className="city-card-img"
-            style={{
-              backgroundImage: url
-            }}
-          />
-          <div className="city-details">
-            <div id="triangle" />
-            <p>{this.props.city}</p>
-            <div id="city-hidden">
-              <p>{this.props.description}</p>
-            </div>
-          </div>
-        </div>
+        </Slider>
       </div>
     );
   }
 }
 
-const topCitiesData = [
-  {
-    id: 1,
-    city: 'New York',
-    route: 'new-york',
-    description: 'Take a bite of the Big Apple',
-    url:
-      'https://cdn-imgix.headout.com/cities/new-york/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 2,
-    city: 'Las Vegas',
-    route: 'las-vegas',
-    description: "An offer you can't refuse",
-    url:
-      'https://cdn-imgix.headout.com/cities/las-vegas/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 3,
-    city: 'Rome',
-    route: 'rome',
-    description: 'Roam the eternal city',
-    url:
-      'https://cdn-imgix.headout.com/cities/rome/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 4,
-    city: 'Paris',
-    route: 'paris',
-    description: "C'est La Vie",
-    url:
-      'https://cdn-imgix.headout.com/cities/paris/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 5,
-    city: 'London',
-    route: 'london',
-    description: 'For everything hunky-dory',
-    url:
-      'https://cdn-imgix.headout.com/cities/london/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 6,
-    city: 'Dubai',
-    route: 'dubai',
-    description: 'An Oasis like no other',
-    url:
-      'https://cdn-imgix.headout.com/cities/dubai/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 7,
-    city: 'Barcelona',
-    route: 'barcelona',
-    description: 'Hacer Peunte a Catalunya',
-    url:
-      'https://cdn-imgix.headout.com/cities/barcelona/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 8,
-    city: 'Madrid',
-    route: 'madrid',
-    description: 'Discover the hear of Spain',
-    url:
-      'https://cdn-imgix.headout.com/cities/madrid/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 9,
-    city: 'Singapore',
-    route: 'singapore',
-    description: 'The Lion City',
-    url:
-      'https://cdn-imgix.headout.com/cities/singapore/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 10,
-    city: 'Venice',
-    route: 'venice',
-    description: 'Enjoy and have fun in the City',
-    url:
-      'https://cdn-imgix.headout.com/cities/venice/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 11,
-    city: 'Milan',
-    route: 'milan',
-    description: 'Enjoy and have fun in the City',
-    url:
-      'https://cdn-imgix.headout.com/cities/milan/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 12,
-    city: 'Naples',
-    route: 'naples',
-    description: 'Enjoy and have fun in the City',
-    url:
-      'https://cdn-imgix.headout.com/cities/naples/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 13,
-    city: 'Budapest',
-    route: 'budapest',
-    description: 'Enjoy and have fun in the City',
-    url:
-      'https://cdn-imgix.headout.com/cities/budapest/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 14,
-    city: 'Edinburg',
-    route: 'edinburg',
-    description: 'Enjoy and have fun in the City',
-    url:
-      'https://cdn-imgix.headout.com/cities/edinburgh/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  },
-  {
-    id: 15,
-    city: 'Florence',
-    route: 'florence',
-    description: 'Enjoy and have fun in the City',
-    url:
-      'https://cdn-imgix.headout.com/cities/florence/images/mobile/morning.jpg?auto=compress&fm=webp&w=412.5&h=486&crop=faces&fit=min'
-  }
-];
-
-export default TopCities;
+export default ResponsiveCardCarousel;

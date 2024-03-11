@@ -54,7 +54,7 @@ class CustomCarousel extends React.Component {
     return (
       <div className="custom-carousel-wrapper">
         <h2>
-          Top Recommendations <span className="red-heart">&#9825;</span>
+        Top Recommended Places <span className="red-heart">&#9825;</span>
         </h2>
         <Slider {...carouselSettings}>
           {TopRecommendationscardData.map((card) => (
