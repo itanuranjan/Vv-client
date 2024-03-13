@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
 import { sentOtpFunction, userVerify } from "../../service/Apis";
-import Spinner from 'react-bootstrap/Spinner';
+// import Spinner from 'react-bootstrap/Spinner';
 import "./Login.css";
 
 const Login = () => {
@@ -53,9 +53,9 @@ const Login = () => {
                           <input type="email" name="email" id="" onChange={(e) => setEmail(e.target.value)} placeholder='Enter Your Email Address' />
                       </div>
                       <button className='btn' onClick={sendOtp}>Login
-                      {
+                      {/* {
                           spiner ? <span><Spinner animation="border" /></span>:""
-                      }
+                      } */}
                       </button>
                       <p>Don't have and account <NavLink to="/register">Sign up</NavLink> </p>
                   </form>
