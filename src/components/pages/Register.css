@@ -1,0 +1,92 @@
+/* Registration.css */
+
+/* Container styles */
+.form_data1 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 999;
+    /* position: fixed; */
+  }
+  
+  /* Form heading styles */
+  .form_heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form_heading h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .form_heading p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Form input styles */
+  .form_input {
+    margin-bottom: 20px;
+  }
+  
+  .form_input label {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .form_input input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Password input styles */
+  .two {
+    position: relative;
+  }
+  
+  .showpass {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Submit button styles */
+  .btn {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Toast message styles */
+  .Toastify__toast-container {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #dc3545;
+  }
+  
+  .Toastify__toast--success {
+    background-color: #28a745;
+  }
+  

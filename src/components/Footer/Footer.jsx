@@ -25,24 +25,69 @@ const Footer = () => {
       <FooterContainer>
         <Row>
           <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <Heading>Get Help 24/7</Heading>
+            <FooterLink href="#">
+              <i className="far fa-question-circle">
+                <span
+                  style={{
+                    marginLeft: "10px",
+                  }}
+                >
+                  Help center
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+            <i class="far fa-comment">
+                <span
+                  style={{
+                    marginLeft: "10px",
+                  }}
+                >
+                  Chat with us
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fa fa-phone">
+                <span
+                  style={{
+                    marginLeft: "10px",
+                  }}
+                >
+                 +91 7004343330
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="far fa-envelope">
+                <span
+                  style={{
+                    marginLeft: "10px",
+                  }}
+                >
+                  support@vv.com
+                </span>
+              </i>
+            </FooterLink>
+            {/* <FooterLink href="#">Help center</FooterLink> */}
+            {/* <FooterLink href="#">Chat with us</FooterLink>
+            <FooterLink href="#">Call +13478970100</FooterLink>
+            <FooterLink href="#">support@headout.com</FooterLink> */}
           </Column>
           <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink href="#">Uttar Pradesh</FooterLink>
-            <FooterLink href="#">Ahemdabad</FooterLink>
-            <FooterLink href="#">Indore</FooterLink>
+            <Heading>Cities</Heading>
+            <FooterLink href="/cities/varanasi">Varanasi</FooterLink>
+            <FooterLink href="#">New-Delhi</FooterLink>
             <FooterLink href="#">Mumbai</FooterLink>
+            <FooterLink href="#">+36 more</FooterLink>
+          </Column>
+          <Column>
+            <Heading>VentureVibe</Heading>
+            <FooterLink href="#">Our Story</FooterLink>
+            <FooterLink href="#">Careers</FooterLink>
+            <FooterLink href="#">Gallary</FooterLink>
+            <FooterLink href="#">Our Team</FooterLink>
           </Column>
           <Column>
             <Heading>Social Media</Heading>
@@ -104,6 +149,7 @@ const Footer = () => {
           marginTop: "20px",
         }}
       >
+      <hr></hr>
         <p>&copy; {2024} VentureVibe. All rights reserved.</p>
       </div>
     </Box>

@@ -5,6 +5,9 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Features from "./components/pages/Features";
 import Login from "./components/pages/Login";
+import Register from "./components/pages/Register";
+import Otp from "./components/pages/Otp";
+import Error from "./components/pages/Error";
 import TopPlacesVaranasi from "./components/Cities/Varanasi/Top-PlacesVaranasi";
 import ImageCollection from "./components/MainHome/ResponsiveImageGallery";
 import TopCities from "./components/MainHome/TopCities";
@@ -30,6 +33,9 @@ function CityRoutes() {
       <Routes>
         <Route path="/" exact element={<MainHome />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/user/otp" element={<Otp />} />
+        <Route path="/*" element={<Error />} />
         {/* <Route path="/" exact element={<TopCities />} /> */}
 
         <Route path="/cities/varanasi" element={<Varanasi />} />

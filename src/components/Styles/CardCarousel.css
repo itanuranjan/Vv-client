@@ -19,6 +19,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 
+  -webkit-box-shadow: 12px 10px 6px -9px rgba(0,0,0,0.8);
+-moz-box-shadow: 12px 10px 6px -9px rgba(0,0,0,0.8);
+box-shadow: 12px 10px 6px -9px rgba(0,0,0,0.8);
+
+  
+
   &:hover {
     transform: scale(1.05);
   }

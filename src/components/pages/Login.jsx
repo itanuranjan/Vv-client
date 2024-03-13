@@ -1,44 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom"
+import { ToastContainer, toast } from 'react-toastify';
+import { sentOtpFunction, userVerify } from "../../service/Apis";
+import Spinner from 'react-bootstrap/Spinner';
 import "./Login.css";
 
-const SignInForm = ({ onClose }) => {
-  return (
-    <div className="signin-popup">
-      <div className="signin-content">
-        <div className="close-icon" onClick={onClose}>
-          <i className="fas fa-times"></i>
-        </div>
-        <form action="#" className="sign-in-form">
-          <h2 className="title">Welcome</h2>
-          <p>Sign in to get cashback as credits, insider-only offers and exclusive deals</p>
-          <div className="input-field">
-            <i className="fas fa-user"></i>
-            <input type="text" placeholder="Username" />
-          </div>
-          <div className="input-field">
-            <i className="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
-          </div>
-          <input type="submit" value="Login" className="btn solid" />
-          <p className="social-text">Or Sign in with social platforms</p>
-          <div className="social-media">
-            <a href="#" className="social-icon">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="social-icon">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="social-icon">
-              <i className="fab fa-google"></i>
-            </a>
-            <a href="#" className="social-icon">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
+const Login = () => {
 
-export default SignInForm;
+  const [email, setEmail] = useState("");
+  const [spiner,setSpiner] = useState(false);
+
+  const navigate = useNavigate();
+
+
+
+  // sendotp
+  const sendOtp = async (e) => {
+      e.preventDefault();
+
+      if (email === "") {
+          toast.error("Enter Your Email !")
+      } else if (!email.includes("@")) {
+          toast.error("Enter Valid Email !")
+      } else {
+          setSpiner(true)
+          const data = {
+              email: email
+          }
+
+          const response = await sentOtpFunction(data);
+
+          if (response.status === 200) {
+              setSpiner(false)
+              navigate("/user/otp",{state:email})
+          } else {
+              toast.error(response.response.data.error);
+          }
+      }
+  }
+
+  return (
+      <>
+          <section>
+              <div className="form_data">
+                  <div className="form_heading">
+                      <h1>Welcome Back, Log In</h1>
+                      <p>Hi, we are you glad you are back. Please login.</p>
+                  </div>
+                  <form>
+                      <div className="form_input">
+                          <label htmlFor="email">Email</label>
+                          <input type="email" name="email" id="" onChange={(e) => setEmail(e.target.value)} placeholder='Enter Your Email Address' />
+                      </div>
+                      <button className='btn' onClick={sendOtp}>Login
+                      {
+                          spiner ? <span><Spinner animation="border" /></span>:""
+                      }
+                      </button>
+                      <p>Don't have and account <NavLink to="/register">Sign up</NavLink> </p>
+                  </form>
+              </div>
+              <ToastContainer />
+          </section>
+      </>
+  )
+}
+
+export default Login

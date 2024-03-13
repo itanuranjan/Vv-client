@@ -1,144 +1,134 @@
-/* Login.css */
-.signin-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    max-width: 370px;
-    /* width: 370px; */
-    /* width: 100%; */
-    border-radius: 15px;
-  }
-  
-  .signin-content {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    width: 100%;
+    padding: 10px;
+    min-height:calc(100vh - 80px);
+}
+
+section .form_data{
+    max-width: 550px;
+    margin: 25px auto;
+    padding: 35px 10px;
+    box-shadow: 0 0 15px -10px #2d3748;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .signin-content h2 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #1a1a1a;
-  }
-  
-  .signin-content form {
-    width: 100%;
-  }
-  
-  .input-field {
-    max-width: 380px;
-    width: 100%;
-    background-color: #f0f0f0;
-    margin: 10px 0;
-    height: 55px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 15% 85%;
-    padding: 0 0.4rem;
-    position: relative;
-  }
-  
-  .input-field i {
-    text-align: center;
-    line-height: 55px;
-    color: #080808;
-    transition: 0.5s;
-    font-size: 1.1rem;
-  }
-  
-  .input-field input {
-    background: none;
-    outline: none;
-    border: none;
-    line-height: 1;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #141414;
-  }
-  
-  .input-field input::placeholder {
-    color: #aaa;
-    font-weight: 500;
-  }
-  
-  .btn {
-    width: 100%;
-    background-color: #333;
-    border: none;
-    outline: none;
-    height: 49px;
-    border-radius: 4px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  
-  .btn:hover {
-    background-color: #000000;
-  }
-  
-  .social-text {
-    padding: 0.7rem 0;
-    font-size: 1rem;
-  }
-  
-  .social-media {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .social-icon {
-    height: 46px;
-    width: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0.45rem;
-    color: #333;
-    border-radius: 50%;
-    border: 1px solid #333;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: 0.3s;
-  }
-  
-  .social-icon:hover {
-    color: orangered;
-    border-color: orangered;
-  }
+    background-color: white;
+}
 
-.signin-content {
+.form_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_data h1{
+    font-size: 34px;
+    color: #2a4365;
+}
+
+.form_data p{
+    color: #718096;
+    font-size: 15px;
+    margin-top:9px;
+}
+
+.form_data form{
+    margin-top: 45px;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.form_data form .form_input input{
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d4d0d0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 14px;
+    margin-top: 9px;
+    font-size: 14px;
+    
+}
+
+.form_data form .form_input label{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form_input .two{
+    display: flex;
+    align-items: center;
     position: relative;
-  }
-  
-  .close-icon {
+}
+
+.form_data form .form_input input:focus{
+    border:2px solid rgba(66, 153, 225,0.6);
+}
+
+
+.form_data form .form_input input::placeholder{
+    color: #8694a8;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+
+.form_input .showpass{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    right: 0;
+    top:1px;
+    padding: 7px 10px;
+    margin-right: 5px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2a4365;
+    background-color: #EDF2F7;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .close-icon:hover {
-    color: orangered;
-  }
-  
-  
-  /* Media Query for responsiveness */
-  @media (max-width: 480px) {
-    .signin-popup {
-      max-width: 90%;
-    }
-  }
-  
+}
+
+form .btn{
+    display:block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:#1a365d;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+form .btn:hover{
+    background-color: #97a1b1;
+}
+form .btnload{
+    background-color: #97a1b1;
+}
+
+.form_data form p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_data form a{
+    text-decoration: none;
+    color:#718096 ;
+    border-bottom: 2px solid #8694a8;
+}

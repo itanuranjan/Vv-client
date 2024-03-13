@@ -10,12 +10,15 @@
 }
 
 .card3 {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 8px;
   margin: 8px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  -webkit-box-shadow: 16px 17px 6px -9px rgba(0,0,0,0.8);
+-moz-box-shadow: 16px 17px 6px -9px rgba(0,0,0,0.8);
+box-shadow: 16px 17px 6px -9px rgba(0,0,0,0.8);
 
   &:hover {
     transform: scale(1.05);

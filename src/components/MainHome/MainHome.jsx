@@ -4,6 +4,10 @@ import TopCities from "./TopCities";
 import TopRecommendations from './TopRecommendations';
 import ResponsiveImageGallery from './ResponsiveImageGallery';
 import ThingstoDo from './ThingstoDo';
+import Location from './Location';
+import Testimonials from './Quotes';
+import WhyWeAre from './WhyWeAre';
+import UserSuggestionForm from './UserSuggestionForm';
 // import CustomReviewCard from './Review';
 // import Marquee from './Marquee';
 
@@ -23,6 +27,10 @@ class MainHome extends Component{
             <TopRecommendations/>
             <ThingstoDo/>
             <ResponsiveImageGallery/>
+            <Testimonials/>
+            <WhyWeAre/>
+            <UserSuggestionForm/>
+            <Location/>
             {/* <CustomReviewCard/> */}
             {/* <Footer/> */}
 
