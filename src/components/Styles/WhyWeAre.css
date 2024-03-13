@@ -1,0 +1,68 @@
+.whyweare-container {
+  /* max-width: 800px; */
+  margin: 10px auto;
+  padding: 0px 20px;
+  /* text-align: center; */
+  margin-left: 30px;
+}
+
+.whyweare {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.whywe {
+  background: #82aced;
+  background: linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  background: -webkit-linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  background: -moz-linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 270px;
+  text-align: center;
+  -webkit-box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+.whywe img {
+  width: 100px; /* Adjust the width of the image as needed */
+  height: 100px; /* Adjust the height of the image as needed */
+  border-radius: 50%; /* Make the image round */
+  margin-bottom: 10px;
+}
+
+.whywe p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.whywe cite {
+  font-style: italic;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .whyweare-container {
+    margin: 10px auto;
+    padding: 0px 10px;
+    text-align: center;
+  }
+
+  .whyweare {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .whywe {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 5px;
+    max-width: 175px;
+    text-align: center;
+  }
+}

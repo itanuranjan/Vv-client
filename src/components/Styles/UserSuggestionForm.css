@@ -1,0 +1,83 @@
+/* UserSuggestionForm.css */
+
+.main-container {
+  display: flex;
+}
+.user-suggestion-form-container {
+  /* max-width: 600px; */
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #82aced;
+  background: linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  background: -webkit-linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  background: -moz-linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  width: 30%;
+  margin-left: 100px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  /* padding: 10px 20px; */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.suggest-input-box {
+  width: 60%;
+  margin: 10px auto;
+  padding: 20px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  /* background-color: #ebf4ff; */
+}
+
+.suggest-input-box iframe {
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .user-suggestion-form-container {
+    width: 90%;
+    margin-left: 15px;
+    margin: 10px auto;
+  }
+  .main-container {
+    display: block;
+  }
+
+  .suggest-input-box {
+    width: 100%;
+    margin: 10px auto;
+  }
+}

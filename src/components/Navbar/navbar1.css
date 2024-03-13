@@ -29,9 +29,10 @@ body {
     z-index: 1000;
   
 }
-.navbar h1 a {
+.navbar h2 a {
   text-decoration: none; /* Remove underline */
   color: #000; /* Set your desired text color */
+
 }
 
 .menu-icon {

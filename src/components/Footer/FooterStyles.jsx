@@ -5,7 +5,7 @@ export const Box = styled.div`
   padding: .5% 2.5%;
   background: #124076;
   bottom: 0;
-  width: 95%;
+  width: 100%;
 `;
 
 export const FooterContainer = styled.div`
@@ -38,19 +38,19 @@ export const Row = styled.div`
 
 export const FooterLink = styled.a`
   color: #fff;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-bottom: 15px;
+  font-size: 15px;
   text-decoration: none;
 
   &:hover {
-    color: green;
+    color: yellow;
     transition: 200ms ease-in;
   }
 `;
 
 export const Heading = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-weight: bold;
 `;
