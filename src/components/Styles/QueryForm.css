@@ -1,0 +1,22 @@
+.Query-Container{
+    margin: 10px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #82aced;
+  background: linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  background: -webkit-linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  background: -moz-linear-gradient(90deg, #82aced 0%, #f2f6f2 80%);
+  width: 30%;
+  margin-left: 100px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+    .Query-Container{
+        width: 90%;
+    margin-left: 15px;
+    margin: 10px auto;
+    }
+}
