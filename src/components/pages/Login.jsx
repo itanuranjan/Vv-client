@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { sentOtpFunction, userVerify } from "../../service/Apis";
 // import Spinner from 'react-bootstrap/Spinner';
 import "./Login.css";
+import Spiner from "../Spiner";
 
 const Login = () => {
 
@@ -23,7 +24,7 @@ const Login = () => {
       } else if (!email.includes("@")) {
           toast.error("Enter Valid Email !")
       } else {
-          setSpiner(true)
+          setSpiner(true);
           const data = {
               email: email
           }
@@ -44,8 +45,8 @@ const Login = () => {
           <section>
               <div className="form_data">
                   <div className="form_heading">
-                      <h1>Welcome Back, Log In</h1>
-                      <p>Hi, we are you glad you are back. Please login.</p>
+                      <h1>Welcome back!</h1>
+                      <p>Please log in to continue. We're thrilled to see you again.</p>
                   </div>
                   <form>
                       <div className="form_input">
@@ -53,9 +54,8 @@ const Login = () => {
                           <input type="email" name="email" id="" onChange={(e) => setEmail(e.target.value)} placeholder='Enter Your Email Address' />
                       </div>
                       <button className='btn' onClick={sendOtp}>Login
-                      {/* {
-                          spiner ? <span><Spinner animation="border" /></span>:""
-                      } */}
+                      { spiner && <Spiner/>} 
+                      {/* <Spiner/> */}
                       </button>
                       <p>Don't have and account <NavLink to="/register">Sign up</NavLink> </p>
                   </form>

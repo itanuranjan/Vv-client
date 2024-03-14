@@ -8,6 +8,8 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+
 section{
     width: 100%;
     padding: 10px;
@@ -105,21 +107,25 @@ form .btn{
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color:#1a365d;
-    color: #fff;
+    background: #4d84c7;
+background: linear-gradient(90deg,#4d84c7 0%, #f1f1f1 80%);
+background: -webkit-linear-gradient(90deg,#4d84c7 0%, #f1f1f1 80%);
+background: -moz-linear-gradient(90deg,#4d84c7 0%, #f1f1f1 80%);
+    color: #141111;
     font-weight: 600;
     font-size: 18px;
     margin-top: 10px;
     cursor: pointer;
     transition: all .3s;
+    /* justify-content: center; */
 }
 
 
 form .btn:hover{
-    background-color: #97a1b1;
+    background-color: #4281e8;
 }
 form .btnload{
-    background-color: #97a1b1;
+    background-color: #eef1f5;
 }
 
 .form_data form p{
@@ -132,3 +138,4 @@ form .btnload{
     color:#718096 ;
     border-bottom: 2px solid #8694a8;
 }
+
