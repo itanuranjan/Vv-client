@@ -13,6 +13,7 @@
     border-radius: 2em;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    padding: 0px 9px;
   }
   
   .left-arrow,
@@ -32,12 +33,13 @@
     top: 45%;
     right: -10px;
     background: #fff;
-    /* width: 30px; */
-    /* height: 30px; */
+    width: 30px;
+    height: 30px;
     border-radius: 2em;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
     /* margin-right: 10px; */
+    padding: 0px 9px;
   }
   
   .slick-arrow-right:hover {

@@ -34,7 +34,7 @@
   margin-bottom: 10px;
 }
 
-.select-experience-large {
+.select-experience-large1 {
   border-radius: 3px;
   box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.15);
   margin-left: 2px;
@@ -44,7 +44,7 @@
 
 .select-experience-large input {
   border: none;
-  font-size: 17px;
+  font-size: 16px;
   padding-left: 20px;
   width: 190px;
   margin-top: 10px;

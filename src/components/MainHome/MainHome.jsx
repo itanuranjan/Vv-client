@@ -8,8 +8,13 @@ import Location from './Location';
 import Testimonials from './Quotes';
 import WhyWeAre from './WhyWeAre';
 import UserSuggestionForm from './UserSuggestionForm';
-// import CustomReviewCard from './Review';
+import CustomReviewCard from './Review';
+import FaqPage from './Faq';
+import BrowseByTheme from './BrowseByTheme';
+import BrowseByThemeTop from './BrowseByThemeTop';
 // import Marquee from './Marquee';
+import Spiner from '../Spiner';
+import CardGallery from './CardGallary';
 
 
 
@@ -20,9 +25,10 @@ class MainHome extends Component{
             <div >
             {/* <Navbar/> */}
             {/* <Navbar1/> */}
-            
             <Hero/>
+            {/* <Spiner/> */}
             {/* <Marquee/> */}
+            <BrowseByThemeTop/>
             <TopCities/>
             <TopRecommendations/>
             <ThingstoDo/>
@@ -31,7 +37,12 @@ class MainHome extends Component{
             <WhyWeAre/>
             <UserSuggestionForm/>
             <Location/>
-            {/* <CustomReviewCard/> */}
+            <CustomReviewCard/>
+            <FaqPage/>
+            <BrowseByTheme/>
+            <CardGallery/>
+
+
             {/* <Footer/> */}
 
             

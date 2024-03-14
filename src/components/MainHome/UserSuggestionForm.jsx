@@ -20,6 +20,8 @@ const UserSuggestionForm = () => {
   };
 
   return (
+    <div>
+    <h2>Share your Experiance</h2>
     <div className="main-container">
     
       <div className="user-suggestion-form-container">
@@ -62,6 +64,7 @@ const UserSuggestionForm = () => {
       <div className="suggest-input-box">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/nZmO8B9rRik?si=uiJeH5mrElqaZ6LI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
+    </div>
     </div>
   );
 };

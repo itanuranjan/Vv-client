@@ -15,7 +15,19 @@ function Location() {
 ></iframe>
   </div>
   <div className='address'>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eum expedita quisquam optio eius voluptate sequi reiciendis nisi odio mollitia consectetur sed laboriosam temporibus earum in omnis velit quia recusandae fugit deleniti aliquid cum et dicta perferendis? Voluptatum, deserunt sed.</p>
+  <h1>VentureVibe</h1>
+  
+  <h3>Chandigarh</h3>
+  <p>Near Metro Station</p>
+  <p>mohali, Chandigarh, 140301</p>
+  <hr></hr>
+  <h3>New-Delhi</h3>
+  <p>Near Metro Station</p>
+  <p>Sector 121, Delhi, 140301</p>
+  <hr></hr>
+  <h3>Patna</h3>
+  <p>Near GB Mall</p>
+  <p>Raja Pul, Boring Road 800005</p>
 
   </div>
   </div>

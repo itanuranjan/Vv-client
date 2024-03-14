@@ -72,7 +72,7 @@ const Searchbar = () => {
           />
         </div>
       </div>
-      <div className="select-experience-large">
+      <div className="select-experience-large1">
         <input
           className="input"
           type="text"
