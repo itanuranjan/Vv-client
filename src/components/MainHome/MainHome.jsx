@@ -15,7 +15,8 @@ import BrowseByThemeTop from './BrowseByThemeTop';
 // import Marquee from './Marquee';
 import Spiner from '../Spiner';
 import CardGallery from './CardGallary';
-
+import QueryForm from './QueryForm';
+import Navbar1 from '../Navbar/Navbar';
 
 
 class MainHome extends Component{
@@ -28,6 +29,7 @@ class MainHome extends Component{
             <Hero/>
             {/* <Spiner/> */}
             {/* <Marquee/> */}
+            {/* <Navbar1/> */}
             <BrowseByThemeTop/>
             <TopCities/>
             <TopRecommendations/>
@@ -41,6 +43,7 @@ class MainHome extends Component{
             <FaqPage/>
             <BrowseByTheme/>
             <CardGallery/>
+            <QueryForm/>
 
 
             {/* <Footer/> */}

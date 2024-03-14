@@ -21,7 +21,7 @@ const UserSuggestionForm = () => {
 
   return (
     <div>
-    <h2>Share your Experiance</h2>
+    {/* <h2>Share your Experiance</h2> */}
     <div className="main-container">
     
       <div className="user-suggestion-form-container">

@@ -27,7 +27,9 @@ const Otp = () => {
         const response = await userVerify(data);
         if (response.status === 200) {
           localStorage.setItem("userdbtoken", response.data.userToken);
+          // localStorage.setItem("Email", response.data.email)
           toast.success(response.data.message);
+          // onLoginSuccess(location.state);
           setTimeout(() => {
             navigate("/")
           }, 2000)
