@@ -6,8 +6,8 @@ const CardGallery = () => {
   const cardsData = [
     {
       alt: "Mythrill",
-      coverImageSrc: "https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg",
-      characterSrc: "https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp"
+      coverImageSrc: "https://ucarecdn.com/8e179fba-fa81-46b2-b051-f0486aa9e593/darshanpatelfJPcAkseFMunsplash.jpg",
+      characterSrc: "https://ucarecdn.com/cddb6992-4749-4648-a568-bafe9e323609/hanumanremovebgpreview.png"
     },
     {
       alt: "Mythrill",
