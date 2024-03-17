@@ -89,6 +89,81 @@ body {
   color: white;
 }
 
+.nav-elements ul li {
+  position: relative; /* Ensure proper positioning of dropdown */
+}
+
+.user-profile {
+  cursor: pointer;
+  position: relative;
+  /* border: 2px solid red; */
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+.user-profile:hover{
+  background-color: rgb(105, 105, 236);
+  padding: 5px;
+
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fef7e5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  text-align: center;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #08060e;
+  padding: 5px 0;
+}
+
+.dropdown-menu button {
+  background-color: transparent;
+  border: none;
+  color: #08060e;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  color: #b33737;
+}
+
+.login-btn{
+  background-color: rgb(85, 153, 208);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.login-btn:hover{
+  background-color: rgb(5, 5, 5);
+  color: white;
+}
+
+.welcome-message {
+  text-align: center !important; /* Override any conflicting styles */
+  color: #fff;
+  padding: 25px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add 3D effect with text shadow */
+}
+
+
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
