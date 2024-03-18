@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/CardCarousel.css";
 import { Left, Right } from "./Arrows";
-import axios from "axios";  // Import axios
+import { getCitiesData } from "../../service/Apis"; // Import the function to fetch data
 
 class ResponsiveCardCarousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      citiesData: [],  // State to hold the fetched data
+      citiesData: [], // State to hold the fetched data
     };
   }
 
@@ -21,10 +21,10 @@ class ResponsiveCardCarousel extends React.Component {
   }
 
   fetchData() {
-    // Use axios to fetch data from your server (replace with your server URL)
-    axios.get("https://venturevibe-server.onrender.com/api/cities")  // Replace with your actual server URL
+    // Call the function from Apis.js to fetch data
+    getCitiesData()
       .then((response) => {
-        console.log("api fetching")
+        console.log("api fetching");
         this.setState({ citiesData: response.data });
       })
       .catch((error) => {
@@ -44,11 +44,11 @@ class ResponsiveCardCarousel extends React.Component {
       responsive: [
         {
           breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 0, // Set initialSlide for smaller screens
-      },
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 0, // Set initialSlide for smaller screens
+          },
         },
         {
           breakpoint: 1344,
@@ -68,11 +68,7 @@ class ResponsiveCardCarousel extends React.Component {
         <h3>Top cities to visit in India</h3>
         <Slider {...settings}>
           {citiesData.map((city) => (
-            <Link
-              key={city.id}
-              to={`/cities/${city.route}`}
-              className="card-link"
-            >
+            <Link key={city.id} to={`/cities/${city.route}`} className="card-link">
               <div className="card">
                 <img src={city.imageUrl} alt={city.title} />
                 <h3>{city.title}</h3>

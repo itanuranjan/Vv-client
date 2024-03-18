@@ -9,6 +9,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown menu
   const location = useLocation();
   const [showWelcomeMessage, setShowWelcomeMessage] = useState(false);
+  const [welcomeMessageDisplayed, setWelcomeMessageDisplayed] = useState(false); // Track if welcome message has been displayed after login
 
   useEffect(() => {
       const token = localStorage.getItem("userdbtoken");
@@ -16,21 +17,23 @@ const Navbar = () => {
       setUserLoggedIn(token !== null);
       setUserEmail(email || "");
 
-      // Show welcome message and remove after 10 seconds
-    if (token !== null) {
-      setShowWelcomeMessage(true);
-      setTimeout(() => {
-        setShowWelcomeMessage(false);
-      }, 10000);
-    }
+      // Show welcome message only once after login
+      if (token !== null && !welcomeMessageDisplayed) {
+        setShowWelcomeMessage(true);
+        setWelcomeMessageDisplayed(true);
+        setTimeout(() => {
+          setShowWelcomeMessage(false);
+        }, 10000);
+      }
 
-  }, [location]);
+  }, [location, welcomeMessageDisplayed]);
 
   const handleLogout = () => {
       localStorage.removeItem("userdbtoken");
       localStorage.removeItem("email");
       setUserLoggedIn(false);
       setUserEmail("");
+      setWelcomeMessageDisplayed(false); // Reset welcome message state on logout
   };
 
   const displayUserName = () => {

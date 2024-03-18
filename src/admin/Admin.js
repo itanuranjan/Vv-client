@@ -38,8 +38,8 @@ const Admin = () => {
         )}
       </div>
       <div>
-        <Link to="/admin/addcities" className="admin-btn">
-          Add Cities Data
+        <Link to="/admin/showdata" className="admin-btn">
+          Show All Data
         </Link>
       </div>
       {/* Add other links as needed */}
