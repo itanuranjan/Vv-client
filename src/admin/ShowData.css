@@ -1,0 +1,51 @@
+/* ShowData.css */
+.admin-container {
+    margin: 60px;
+    
+  }
+  
+  .data-table {
+    /* width: 100%; */
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 900px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .data-table button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .data-table button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles for images */
+  .data-table img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  

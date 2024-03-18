@@ -21,6 +21,8 @@ import RecoInputData from "./admin/MainHome/TopRecommended/InputData";
 import ThingsToDoInputData from "./admin/MainHome/ThingsToDo/InputData";
 import GallaryInputData from "./admin/MainHome/ImageGallary/InputData";
 import Admin from "./admin/Admin";
+import ShowData from "./admin/ShowData";
+import UserProfile from "./components/pages/UserProfile";
 
 function CityRoutes() {
   return (
@@ -78,6 +80,8 @@ function CityRoutes() {
           path="/cards/kashi-vishwanath-temple" element={<PlaceDetails />}
         />
         <Route path="/admin" exact element={<Admin />} />
+        <Route path="/profile" exact element={<UserProfile />} />
+        <Route path="/admin/showdata" exact element={<ShowData />} />
         <Route path="/admin/addhome/topcities" element={<TopCitiesInputData />} />
         <Route path="/admin/addhome/hero" element={<HeroInputData />} />
         <Route path="/admin/addhome/toprecommendation" element={<RecoInputData />} />
