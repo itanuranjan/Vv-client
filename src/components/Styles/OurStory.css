@@ -1,0 +1,52 @@
+.about-us-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.content h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-us-page {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content p, .content ul li {
+        font-size: 14px;
+    }
+}

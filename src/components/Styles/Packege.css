@@ -1,0 +1,95 @@
+/* Packege.css */
+
+.pkg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 95%;
+    background-color: rgb(35, 132, 216);
+    margin: 20px auto;
+    border-radius: 3px;
+  }
+  
+  .left-side-text {
+    width: 30%;
+  }
+  
+  .pkgcard-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pkgcard {
+    width: 950px; 
+    height: 270px; /* Adjust card height as needed */
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .pkgcard:hover {
+    transform: scale(1.01);
+  }
+  
+  .pkgcard-title {
+    font-size: 20px;
+    font-weight: bold;
+    /* margin: 10px 0; */
+    text-align: center;
+  }
+  
+  .pkgcard-subtitle {
+    font-size: 16px;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    font-style: italic;
+    color: rgb(16, 22, 207);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .pkgcard-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .pkgcard-description {
+    font-size: 14px;
+    margin: 0 10px 10px;
+  }
+  
+  .premium {
+    background-color: #ffd700; /* Example color for premium cards */
+  }
+  
+  /* Media query for responsive layout */
+  @media (max-width: 768px) {
+    .pkg-container {
+      flex-direction: column;
+    }
+  
+    .left-side-text,
+    .pkgcard-container {
+      width: 100%;
+    }
+  
+    .pkgcard {
+      width: 100%;
+    }
+  }
+  

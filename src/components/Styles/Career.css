@@ -1,0 +1,58 @@
+/* CareerPage.css */
+
+.career-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 63px;
+  }
+  
+  .positions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* CareerForm.css */
+  
+  .career-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .career-form h2 {
+    margin-top: 0;
+  }
+  
+  .career-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .career-form input,
+  .career-form textarea,
+  .career-form button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .career-form input[type="file"] {
+    padding: 4px;
+  }
+  
+  .career-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .positions {
+      grid-template-columns: 1fr;
+    }
+  }
+  

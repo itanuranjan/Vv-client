@@ -290,7 +290,7 @@ export const TopRecommendationscardData = [
   },
   {
     id: 2,
-    title: "Shri Ram Temple, Ayodhya",
+    title: "Ram Temple, Ayodhya",
     description:
       "Ram Mandir, also known as the Shri Ram Janmabhoomi Mandir, is a Hindu temple complex under construction in Ayodhya.[94] The site is significant to Hindus as it is believed to be the birthplace of their revered deity Rama.",
     imageUrl:

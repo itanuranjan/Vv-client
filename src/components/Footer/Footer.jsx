@@ -1,4 +1,4 @@
-// Filename - components/Footer.js
+// Footer.js
 
 import React from 'react';
 import {
@@ -70,24 +70,20 @@ const Footer = () => {
                 </span>
               </i>
             </FooterLink>
-            {/* <FooterLink href="#">Help center</FooterLink> */}
-            {/* <FooterLink href="#">Chat with us</FooterLink>
-            <FooterLink href="#">Call +13478970100</FooterLink>
-            <FooterLink href="#">support@headout.com</FooterLink> */}
           </Column>
           <Column>
             <Heading>Cities</Heading>
             <FooterLink href="/cities/varanasi">Varanasi</FooterLink>
-            <FooterLink href="#">New-Delhi</FooterLink>
-            <FooterLink href="#">Mumbai</FooterLink>
+            <FooterLink href="/cities/new-delhi">New-Delhi</FooterLink>
+            <FooterLink href="/cities/mumbai">Mumbai</FooterLink>
             <FooterLink href="#">+36 more</FooterLink>
           </Column>
           <Column>
             <Heading>VentureVibe</Heading>
-            <FooterLink href="#">Our Story</FooterLink>
-            <FooterLink href="#">Careers</FooterLink>
-            <FooterLink href="#">Gallary</FooterLink>
-            <FooterLink href="#">Our Team</FooterLink>
+            <FooterLink href="/about-us">Our Story</FooterLink>
+            <FooterLink href="/career">Careers</FooterLink>
+            <FooterLink href="/gallery">Gallery</FooterLink>
+            <FooterLink href="/our-team">Our Team</FooterLink>
           </Column>
           <Column>
             <Heading>Social Media</Heading>
@@ -102,7 +98,7 @@ const Footer = () => {
                 </span>
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href="https://www.instagram.com/__anuranjan__">
               <i className="fab fa-instagram">
                 <span
                   style={{
@@ -113,7 +109,7 @@ const Footer = () => {
                 </span>
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href="https://twitter.com/iamanuranjan">
               <i className="fab fa-twitter">
                 <span
                   style={{
@@ -124,7 +120,7 @@ const Footer = () => {
                 </span>
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href="https://www.youtube.com/channel/UC3syvllcr9GNhRkFQUpPR6w">
               <i className="fab fa-youtube">
                 <span
                   style={{
@@ -141,7 +137,6 @@ const Footer = () => {
 
       <div
         style={{
-        //   backgroundColor: "#f0f0f0",
           padding: "10px",
           textAlign: "center",
           color: "white",
@@ -149,10 +144,13 @@ const Footer = () => {
           marginTop: "20px",
         }}
       >
-      <hr></hr>
-        <p>&copy; {2024} VentureVibe. All rights reserved.</p>
+        <hr></hr>
+        <p style={{ margin: '5px 10px', color:'red'}}>&copy; {2024} VentureVibe. All rights reserved.</p>
+        <FooterLink href="/privacy-policy" style={{ margin: '0 10px' }}>Privacy Policy</FooterLink>
+        <FooterLink href="/terms-of-usage">Terms of Usage</FooterLink>
       </div>
     </Box>
   );
 };
+
 export default Footer;

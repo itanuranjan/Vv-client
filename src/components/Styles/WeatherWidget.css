@@ -1,0 +1,21 @@
+.weather-widget {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .weather-widget h2 {
+    margin-top: 0;
+  }
+  
+  .weather-widget p {
+    margin: 5px 0;
+  }
+  
+  .loading {
+    font-style: italic;
+  }
+  

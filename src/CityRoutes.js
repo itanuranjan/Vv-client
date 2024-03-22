@@ -23,6 +23,10 @@ import GallaryInputData from "./admin/MainHome/ImageGallary/InputData";
 import Admin from "./admin/Admin";
 import ShowData from "./admin/ShowData";
 import UserProfile from "./components/pages/UserProfile";
+import TeamPage from "./components/pages/TeamPage";
+import OurStoryPage from "./components/pages/OurStoryPage";
+import Gallery from "./components/pages/Gallary";
+import CareerPage from "./components/pages/Career";
 
 function CityRoutes() {
   return (
@@ -38,7 +42,15 @@ function CityRoutes() {
         <Route path="/register" element={<Register />} />
         <Route path="/user/otp" element={<Otp />} />
         <Route path="/*" element={<Error />} />
+        <Route path="/our-team" element={<TeamPage />} />
+        <Route path="/about-us" element={<OurStoryPage />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/career" element={<CareerPage />} />
         {/* <Route path="/" exact element={<TopCities />} /> */}
+
+
+
+      {/* //Cities Route */}
 
         <Route path="/cities/varanasi" element={<Varanasi />} />
         <Route path="/cities/new-delhi" element={<MainHome />} />
