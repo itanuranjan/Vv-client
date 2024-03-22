@@ -65,7 +65,7 @@ class CustomCarousel extends React.Component {
                 <p>
                   {expandedCardId === card.id
                     ? card.fullDescription
-                    : `${card.description.slice(0, 100)}...`}
+                    : `${card.description.slice(0, 90)}...`}
                 </p>
                 {card.description.length > 100 && (
                   <button

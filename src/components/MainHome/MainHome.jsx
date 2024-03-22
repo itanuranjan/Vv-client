@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Hero from './Hero';
 import TopCities from "./TopCities";
 import TopRecommendations from './TopRecommendations';
-import ResponsiveImageGallery from './ResponsiveImageGallery';
+// import ResponsiveImageGallery from './ResponsiveImageGallery';
 import ThingstoDo from './ThingstoDo';
 import Location from './Location';
 import Testimonials from './Quotes';
@@ -13,10 +13,14 @@ import FaqPage from './Faq';
 import BrowseByTheme from './BrowseByTheme';
 import BrowseByThemeTop from './BrowseByThemeTop';
 // import Marquee from './Marquee';
-import Spiner from '../Spiner';
-import CardGallery from './CardGallary';
+// import Spiner from '../Spiner';
+// import CardGallery from './CardGallary';
 import QueryForm from './QueryForm';
-import Navbar1 from '../Navbar/Navbar';
+// import Navbar1 from '../Navbar/Navbar';
+import WeatherWidget from './WeatherWidget';
+import HistoricalPlaces from './HistoricalPlaces';
+import EuropeGroupTourCard from './Packege';
+import AllPlacesPackages from './TourPackage';
 
 
 class MainHome extends Component{
@@ -32,18 +36,23 @@ class MainHome extends Component{
             {/* <Navbar1/> */}
             <BrowseByThemeTop/>
             <TopCities/>
+            <AllPlacesPackages/>
             <TopRecommendations/>
             <ThingstoDo/>
-            <ResponsiveImageGallery/>
-            <Testimonials/>
+            <HistoricalPlaces/>
+            <EuropeGroupTourCard/>
             <WhyWeAre/>
+            <CustomReviewCard/>
+            {/* <ResponsiveImageGallery/> */}
+            <Testimonials/>
             <UserSuggestionForm/>
             <Location/>
-            <CustomReviewCard/>
             <FaqPage/>
             <BrowseByTheme/>
-            <CardGallery/>
+            {/* <CardGallery/> */}
             <QueryForm/>
+            <WeatherWidget/>
+
 
 
             {/* <Footer/> */}

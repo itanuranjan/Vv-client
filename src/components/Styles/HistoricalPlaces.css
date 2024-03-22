@@ -1,0 +1,96 @@
+/* ThingstoDo.css */
+.hcard-carousel-container {
+    max-width: 95%;
+    margin: 0px auto;
+    position: relative;
+  }
+  
+  .hcard-carousel-container h3 {
+    /* text-align: center; */
+    font-size: 24px;
+    margin: 0px 0px;
+  }
+  .hcard-discription h6{
+    color: rgb(6, 53, 221);
+  }
+  .hcard-discription p{
+    font-style: italic;
+  }
+  .hcard-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .hcard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hcard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .hcard img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .hcard-discription {
+    padding: 10px;
+  }
+  
+  .hcard-discription h3 {
+    margin-top: 0;
+  }
+  
+  /* Triangle hover effect */
+  .hcard::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .hcard:hover::before {
+    border-top-color: #e70c0c; /* Change color as per your preference */
+  }
+  
+  /* Before-after effect */
+  .hcard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease;
+  }
+  
+  .hcard:hover::after {
+    background-color: rgba(255, 255, 255, 0.745); /* Change opacity as per your preference */
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .hcard-carousel-container {
+      max-width: 87%;
+      /* margin: 20px auto; */
+    }
+    .hcard{
+    img{
+      height: 200px;
+    }
+  }
+  }

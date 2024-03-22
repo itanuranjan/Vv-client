@@ -21,17 +21,20 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  /* border: 5px solid red ; */
 }
 
 .select-city-large i {
   color: red;
   padding-left: 30px;
   font-size: 25px;
+  
 }
 
 .select-div {
   position: relative;
   margin-bottom: 10px;
+  
 }
 
 .select-experience-large1 {
@@ -39,32 +42,31 @@
   box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.15);
   margin-left: 2px;
   background: white;
-  width: 240px;
 }
 
-.select-experience-large input {
+.select-experience-large1 input {
   border: none;
-  font-size: 16px;
+  font-size: 12px;
   padding-left: 20px;
   width: 190px;
-  margin-top: 10px;
   outline: none;
-  transition: width 0.3s ease-out;
+  transition: width 0.4s ease-out;
+
 }
 
-.select-experience-large input:focus-within {
+.select-experience-large1 input:focus-within {
   width: 240px;
 }
 
-.select-experience-large i {
+.select-experience-large1 i {
   color: #cbcbcb;
 }
 
 #go {
   font-size: 16.2px;
-  line-height: 22.68px;
+  line-height: 18.68px;
   font-weight: 500;
-  width: 110px;
+  width: 120px;
   border-radius: 3px;
   border: none;
   outline: none;
@@ -120,7 +122,11 @@
     width: 160px;
     margin-left: 0;
   }
-  .select-experience-large {
-    width: 220px;
+  .select-experience-large1 {
+    width: 350px;
+    /* height: 30px; */
+  }
+  .select-experience-large1 input:focus-within {
+    width: 200px;
   }
 }
