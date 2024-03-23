@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import '../Styles/TourPackage.css';
 
-// TourPackageCard component
 const TourPackageCard = ({ imgSrc, price, offer, placeName, placeCity }) => {
   return (
     <div className="tour-package-card">
@@ -66,17 +65,23 @@ const AllPlacesPackages = () => {
   return (
     <div className="all-places-packages">
       <div className="left-section">
+      
+      <button className="prev" onClick={() => handleScroll(-150)}>&#10094;</button>
+        <button className="next" onClick={() => handleScroll(150)}>&#10095;</button>
         <h1>Tour Package</h1>
+        {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum!</p> */}
+        
+      
       </div>
       <div className="right-section">
         <div className="carousel">
-          <button className="prev" onClick={() => handleScroll(-150)}>&#10094;</button>
+         
           <div className="scroll-container" ref={scrollRef}>
             {tourPackages.map((tourPackage, index) => (
               <TourPackageCard key={index} {...tourPackage} />
             ))}
           </div>
-          <button className="next" onClick={() => handleScroll(150)}>&#10095;</button>
+          
         </div>
       </div>
     </div>

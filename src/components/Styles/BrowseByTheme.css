@@ -23,7 +23,7 @@
   }
   
   .category.active {
-    background-color: #007bff;
+    /* background-color: #007bff; */
     color: #fff;
   }
   
@@ -40,6 +40,11 @@
     box-sizing: border-box;
   }
   
+  .item a{
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+  }
   /* Responsive CSS */
   @media screen and (max-width: 768px) {
     .category {
@@ -48,7 +53,6 @@
     }
   
     .items {
-      /* justify-content: center; */
       display: flex;
     flex-wrap: wrap;
     }

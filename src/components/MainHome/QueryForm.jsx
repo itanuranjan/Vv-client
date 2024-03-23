@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../Styles/QueryForm.css';
+import ExpenseCalculator from './ExpenseCalculator';
 
 const QueryForm = () => {
   const [name, setName] = useState('');
@@ -26,6 +27,7 @@ const QueryForm = () => {
   };
 
   return (
+    <div className='Query'>
     <div className='Query-Container' >
     <h2>Rise Query</h2>
     <form onSubmit={handleSubmit}>
@@ -51,6 +53,10 @@ const QueryForm = () => {
       <br />
       <button type="submit">Submit</button>
     </form>
+    </div>
+    <div className='Exp-Cal'>
+      <ExpenseCalculator/>
+    </div>
     </div>
   );
 };

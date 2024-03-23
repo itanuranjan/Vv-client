@@ -9,6 +9,10 @@
     background-color: rgb(35, 132, 216);
     margin: 20px auto;
     border-radius: 3px;
+    background: #a7f8ff;
+background: linear-gradient(90deg,#a7f8ff 0%, #eee6e6 80%);
+background: -webkit-linear-gradient(90deg,#a7f8ff 0%, #eee6e6 80%);
+background: -moz-linear-gradient(90deg,#a7f8ff 0%, #eee6e6 80%);
   }
   
   .left-side-text {
