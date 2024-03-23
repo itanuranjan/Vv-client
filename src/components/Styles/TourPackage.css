@@ -1,122 +1,141 @@
 /* TourPackage.css */
 
 .all-places-packages {
-    max-width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  background-color: rgb(207, 231, 241);
+  border-radius: 10px;
+}
+
+.right-section {
+  width: 80%;
+}
+.left-section {
+  margin-bottom: 20px;
+  width: 20%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.left-section h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tour-package-card {
+  flex: 0 0 auto;
+  width: 270px; /* Adjust card width as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* border: 2px solid red; */
+  background-color: #ffffff;
+  /* background: #a7f8ff; */
+  /* background: linear-gradient(90deg, #a7f8ff 0%, #eee6e6 80%);
+  background: -webkit-linear-gradient(90deg, #a7f8ff 0%, #eee6e6 80%);
+  background: -moz-linear-gradient(90deg, #a7f8ff 0%, #eee6e6 80%); */
+
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.tour-package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.pdetails {
+  padding: 10px;
+  text-align: center;
+}
+
+.offer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #d53141;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.prev,
+.next {
+  /* position: absolute; */
+  /* top: 200%; */
+  /* transform: translateY(-50%); */
+  background-color: transparent;
+  border: none;
+  color: #333;
+  background-color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1; 
+  margin-right: 30px;
+  margin-left: 30px;
+  /* border: 2px solid red; */
+  padding: 15px;
+  /* margin-top: 0px; */
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .all-places-packages {
+    width: 85%;
     margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    background-color: rgb(230, 226, 222);
-    border-radius: 10px;
-  }
-  
-  .left-section, .right-section {
-    width: 80%;
-  }
-  
-  .left-section {
-    margin-bottom: 20px;
-  }
-  
-  .left-section h1 {
-    font-size: 1.5rem;
-  }
-  
-  .carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .scroll-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px; /* Adjust as needed */
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  }
-  
-  .tour-package-card {
-    flex: 0 0 auto;
-    width: 300px; /* Adjust card width as needed */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    /* border: 2px solid red; */
-    background-color: #ff6347;
-  }
-  
-  .tour-package-card img {
-    width: 100%;
-    height: 200px; /* Adjust as needed */
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    /* border: 2px solid red; */
-  }
-  
-  .pdetails {
     padding: 10px;
-    text-align: center;
-    /* border: 2px solid red; */
-    /* display: inline; */
+    /* display: flex; */
+    /* flex-direction: column; */
   }
-  
-  .offer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #0c3def; /* Highlight color */
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+  .right-section {
+    width: 65%;
   }
-  
+  .left-section {
+    width: 35%;
+  }
+  .tour-package-card {
+    width: 90%;
+  }
+
+  .scroll-container {
+    align-items: center;
+    gap: 10px;
+  }
+
   .prev,
   .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    color: #333;
-    background-color: white;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1;
-    /* border: 2px solid red; */
+    display: none;
   }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    .all-places-packages {
-        width: 85%;
-        margin: 0 auto;
-        padding: 20px;
-        /* display: flex; */
-        /* flex-direction: column; */
-      }
-    .tour-package-card {
-      width: 85%; 
-    }
-  
-    .scroll-container {
-      align-items: center;
-    }
-  
-    .prev,
-    .next {
-      display: none;
-    }
-  }
-  
+}

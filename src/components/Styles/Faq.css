@@ -41,3 +41,12 @@
 .expanded .arrow {
   transform: rotate(-90deg);
 }
+@media screen and (max-width: 600px){
+
+  .faq-container {
+    max-width: 90%;
+    margin: 20px auto;
+    background: rgb(160, 197, 236) !important;
+  }
+
+}

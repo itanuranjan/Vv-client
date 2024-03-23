@@ -1,0 +1,49 @@
+.expense-calculator {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .expense-inputs {
+    margin-bottom: 20px;
+  }
+  
+  .expense-inputs label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .expense-inputs input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .total-expense {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .exp-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .t-exp{
+    color: rgb(255, 255, 255);
+    background-color: black;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .expense-calculator {
+      padding: 10px;
+    }
+  }
+  

@@ -9,21 +9,16 @@ const BrowseByThemeTop = () => {
   const categories = [
     "Tickets",
     "Tours",
-    "Transportation",
-    "Travel Services",
+    "Travel",
     "Cruises",
-    "Food & Drink",
     "Entertainment",
     "Adventure",
-    "Aerial Sight",
-    "Water Sports",
-    "Nature Wildlife",
+    "Wildlife",
     "Wellness",
     "Classes",
     "Specials",
     "Staycations",
     "Sports",
-    "Theme Parks",
   ];
 
   const [selectedCategory, setSelectedCategory] = useState(null);

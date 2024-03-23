@@ -16,7 +16,7 @@ function Location() {
   </div>
   <div className='address'>
   <h1>VentureVibe</h1>
-  
+  <hr></hr>
   <h3>Chandigarh</h3>
   <p>Near Metro Station</p>
   <p>mohali, Chandigarh, 140301</p>

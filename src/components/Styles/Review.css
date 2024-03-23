@@ -65,10 +65,11 @@
     width: 100%;
   }
   .review-card-container1 {
-    width: 95%;
+    width: 90%;
     margin-left: 10px;
     border-radius: 15px;
     /* padding: 10px 0px; */
     margin-top: 10px;
+    margin: 0px auto;
   }
 }

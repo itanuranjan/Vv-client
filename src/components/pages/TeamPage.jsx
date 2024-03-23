@@ -12,7 +12,7 @@ const TeamPage = () => {
       github: 'https://github.com/johndoe',
       linkedin: 'https://www.linkedin.com/in/johndoe',
       portfolio: 'https://www.johndoeportfolio.com',
-      imageUrl: 'https://ucarecdn.com/fd4f2676-1408-47bb-a7ff-ceabaff1551f/Profile.jpg', // Placeholder image URL
+      imageUrl: 'https://ucarecdn.com/fd4f2676-1408-47bb-a7ff-ceabaff1551f/-/preview/411x546/', // Placeholder image URL
       details: 'John Doe is an experienced frontend developer...'
     },
     {

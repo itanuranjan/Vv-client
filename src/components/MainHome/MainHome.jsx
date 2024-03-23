@@ -21,6 +21,7 @@ import WeatherWidget from './WeatherWidget';
 import HistoricalPlaces from './HistoricalPlaces';
 import EuropeGroupTourCard from './Packege';
 import AllPlacesPackages from './TourPackage';
+import ExpenseCalculator from './ExpenseCalculator';
 
 
 class MainHome extends Component{
@@ -45,13 +46,14 @@ class MainHome extends Component{
             <CustomReviewCard/>
             {/* <ResponsiveImageGallery/> */}
             <Testimonials/>
-            <UserSuggestionForm/>
+            {/* <UserSuggestionForm/> */}
             <Location/>
             <FaqPage/>
             <BrowseByTheme/>
             {/* <CardGallery/> */}
             <QueryForm/>
-            <WeatherWidget/>
+            {/* <ExpenseCalculator/> */}
+            {/* <WeatherWidget/> */}
 
 
 

@@ -13,6 +13,8 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  background-color: #d7dce2;
+  border-radius: 10px;
 }
 
 .testimonial {
