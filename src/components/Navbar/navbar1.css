@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -81,12 +81,12 @@ body {
   
 }
 
-.nav-elements ul a.active {
-  /* color: #b33737;
+/* .nav-elements ul a.active {
+  color: #b33737;
   font-weight: 500;
   position: relative; */
-  /* border-top: 2px solid black; */
-}
+  /* border-top: 2px solid black;
+} */
 
 /* .nav-elements ul a.active::after {
   content: '';
@@ -135,56 +135,54 @@ body {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  right: 0;
-  background: transparent;
+  top: 100%; /* Position it below the parent element */
+  left: 30%; /* Position it in the middle horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
+  background: white;
   border-radius: 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   z-index: 1000;
-  text-align: right;
-  border: none;
-  
+  text-align: center;
+  border: 1px solid #ccc;
+  max-width: 80px;
+  margin: 10px auto;
 }
 
-.dropdown-menu a {
+.drpdn-profile {
+  text-align: center;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
   text-decoration: none;
   color: #08060e;
-  padding: 5px 0;
-  margin:0px 0px;
-  
-}
-
-.dropdown-menu button {
-  background-color: transparent;
-  border: none;
-  color: #08060e;
-  padding: 5px 0;
+  padding: 5px 20px; /* Adjust padding */
+  margin: 5px 0; /* Adjust margin */
   cursor: pointer;
-  text-align: right;
 }
 
 .dropdown-menu a:hover,
 .dropdown-menu button:hover {
   color: #fafafa;
-  background: transparent;
+  background: #08060e;
 }
 
-.login-btn{
-  /* background-color: rgb(85, 153, 208); */
-  color: white;
-  padding: 7px;
+.login-btn {
+  /* color: white; */
+  padding: 7px 20px;
   border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
   border: 1px solid black;
 }
-.login-btn:hover{
-  background-color: rgb(5, 5, 5);
-  color: white;
-  border: 1px solid white;
+
+.login-btn:hover {
+  background-color: #050505;
+  color: #fff;
+  border: 1px solid rgb(12, 39, 244);
 }
+
+
 
 .welcome-message {
   text-align: center !important; /* Override any conflicting styles */

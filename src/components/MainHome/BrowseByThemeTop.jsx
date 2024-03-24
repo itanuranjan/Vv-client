@@ -35,7 +35,7 @@ const BrowseByThemeTop = () => {
     speed: 500,
     slidesToShow: 8,
     slidesToScroll: 4,
-    afterChange: (currentSlide) => setSelectedCategory(currentSlide),
+    // afterChange: (currentSlide) => setSelectedCategory(currentSlide),
     initialSlide: 0,
     responsive: [
       {

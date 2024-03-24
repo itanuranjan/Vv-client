@@ -99,7 +99,8 @@ section .form_data {
 }
 
 form .btn {
-  display: block;
+  position: relative;
+  /* display: block; */
   width: 100%;
   padding: 15px;
   border: none;
