@@ -38,7 +38,7 @@ class ResponsiveCardCarousel extends React.Component {
     };
 
     return (
-      <div className="responsive-card-carousel-wrapper">
+      <div className="responsive-card-carousel-wrapper" id="cities">
         <h3>Top cities to visit in India</h3>
         <Slider {...settings}>
           {citiesData.map((city) => (

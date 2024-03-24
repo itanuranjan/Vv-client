@@ -52,7 +52,7 @@ class CustomCarousel extends React.Component {
     };
 
     return (
-      <div className="custom-carousel-wrapper">
+      <div className="custom-carousel-wrapper" id='recoment'>
         <h2>
         Top Recommended Places <span className="red-heart">&#9825;</span>
         </h2>

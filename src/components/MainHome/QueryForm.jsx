@@ -27,7 +27,7 @@ const QueryForm = () => {
   };
 
   return (
-    <div className='Query'>
+    <div className='Query' id='query'>
     <div className='Query-Container' >
     <h2>Rise Query</h2>
     <form onSubmit={handleSubmit}>
@@ -54,7 +54,7 @@ const QueryForm = () => {
       <button type="submit">Submit</button>
     </form>
     </div>
-    <div className='Exp-Cal'>
+    <div className='Exp-Cal' id='calculator'>
       <ExpenseCalculator/>
     </div>
     </div>

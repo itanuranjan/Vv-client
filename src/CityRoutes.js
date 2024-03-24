@@ -131,6 +131,11 @@ function CityRoutes() {
        {/* //Budget tour Route */}
         <Route path="/budget-tour/kasmir" element={<MainHome />} />
 
+
+{/* 
+
+        <Route path="/category/Tickets" element={<QueryForm />} /> */}
+
       </Routes>
       <Footer />
     </Router>
