@@ -58,7 +58,7 @@ class CustomCarousel extends React.Component {
         </h2>
         <Slider {...carouselSettings}>
           {TopRecommendationscardData.map((card) => (
-            <Link key={card.id} to={`/cards/${card.route}`} className="custom-card-link">
+            <Link key={card.id} to={`/places/${card.route}`} className="custom-card-link">
               <div className={`custom-card ${expandedCardId === card.id ? 'expanded' : ''}`}>
                 <img src={card.imageUrl} alt={card.title} />
                 <h3>{card.title}</h3>

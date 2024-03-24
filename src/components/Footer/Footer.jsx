@@ -26,7 +26,7 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>Get Help 24/7</Heading>
-            <FooterLink href="#">
+            <FooterLink href="/raise-query">
               <i className="far fa-question-circle">
                 <span
                   style={{
@@ -37,7 +37,7 @@ const Footer = () => {
                 </span>
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href={`https://wa.me/${'7004343330'}`}>
             <i class="far fa-comment">
                 <span
                   style={{
@@ -48,7 +48,7 @@ const Footer = () => {
                 </span>
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href={`tel:${'7004343330'}`}>
               <i className="fa fa-phone">
                 <span
                   style={{
@@ -59,7 +59,7 @@ const Footer = () => {
                 </span>
               </i>
             </FooterLink>
-            <FooterLink href="#">
+            <FooterLink href={`mailto:${'support@vv.com'}`}>
               <i className="far fa-envelope">
                 <span
                   style={{
@@ -76,7 +76,7 @@ const Footer = () => {
             <FooterLink href="/cities/varanasi">Varanasi</FooterLink>
             <FooterLink href="/cities/new-delhi">New-Delhi</FooterLink>
             <FooterLink href="/cities/mumbai">Mumbai</FooterLink>
-            <FooterLink href="#">+36 more</FooterLink>
+            <FooterLink href="/cities">+36 more</FooterLink>
           </Column>
           <Column>
             <Heading>VentureVibe</Heading>

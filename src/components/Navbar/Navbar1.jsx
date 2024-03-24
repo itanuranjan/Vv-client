@@ -51,7 +51,7 @@ const Navbar = () => {
           <img
             src={logoImage}
             alt="VentureVibes Logo"
-            style={{ height: "40px", width: "60px" }} // Set height and width
+            // style={{ height: "40px", width: "60px" }} 
           />
           <h2>
             <NavLink to="/">VentureVibe</NavLink>

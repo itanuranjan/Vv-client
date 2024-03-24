@@ -1,0 +1,14 @@
+/* PrivacyPolicy.css */
+.TermsCondition-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 63px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .TermsCondition-container {
+      width: 90%;
+    }
+  }
+  

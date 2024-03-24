@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/CardCarousel.css";
 import { Left, Right } from "./Arrows";
-import { citiesData } from "./Image"; // Import city data from Image.js
+import { getCitiesData } from "../../service/Apis"; // Import the function to fetch data
 
 class ResponsiveCardCarousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      citiesData: [], // State to hold the fetched data
+    };
+  }
+
+  componentDidMount() {
+    // Fetch data when the component mounts
+    this.fetchData();
+  }
+
+  fetchData() {
+    // Call the function from Apis.js to fetch data
+    getCitiesData()
+      .then((response) => {
+        console.log("api fetching");
+        this.setState({ citiesData: response.data });
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }
+
   render() {
+    const { citiesData } = this.state;
+
     const settings = {
       infinite: true,
       speed: 500,
