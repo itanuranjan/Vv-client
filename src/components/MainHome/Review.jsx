@@ -82,7 +82,7 @@ class ThingstoDo extends React.Component {
     };
 
     return (
-      <div className="review-card-container1">
+      <div className="review-card-container1" id="review">
         <h3 className="review-card-h1title" ><span class="red-star">★</span>Millions love heading out with us <span class="red-star">★</span></h3>
         <Slider {...settings}>
           {this.card3Data.map((card) => (

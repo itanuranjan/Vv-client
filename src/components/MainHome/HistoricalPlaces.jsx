@@ -40,7 +40,7 @@ class HistoricalPlaces extends React.Component {
     
 
     return (
-      <div className="hcard-carousel-container">
+      <div className="hcard-carousel-container" id="historical">
         <h3>Historical places in India</h3>
         <Slider {...settings}>
           {card3Data.map((card) => (

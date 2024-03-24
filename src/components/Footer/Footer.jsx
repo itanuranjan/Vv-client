@@ -149,6 +149,7 @@ const Footer = () => {
         <FooterLink href="/privacy-policy" style={{ margin: '0 10px' }}>Privacy Policy</FooterLink>
         <FooterLink href="/terms-of-usage">Terms of Usage</FooterLink>
       </div>
+      <div style={{marginBottom:'40px'}}> </div>
     </Box>
   );
 };

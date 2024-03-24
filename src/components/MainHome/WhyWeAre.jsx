@@ -39,7 +39,7 @@ const WhyWeAre = () => {
   ];
 
   return (
-    <div className="whyweare-container">
+    <div className="whyweare-container" id="whywe">
       <h2>We are Here for you</h2>
       <div className="whyweare">
         {whyweare.map((whyweare) => (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Styles/Packege.css';
 
 const Card = ({ title, subtitle, price, description, premium, image, link }) => (
-  <Link to={link} className={`pkgcard ${premium ? 'premium' : ''}`}>
+  <Link to={link} id='pkgexpense' className={`pkgcard ${premium ? 'premium' : ''}`}>
     <div className="pkgcard-title">{title}</div>
     <div className="pkgcard-subtitle">{subtitle}</div>
     <img src={image} alt={title} className="card-image" />

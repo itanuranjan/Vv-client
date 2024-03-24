@@ -37,7 +37,7 @@ const FaqPage = () => {
   ];
 
   return (
-    <div className="faq-container">
+    <div className="faq-container" id="faqs">
       <h1>Frequently Asked Questions</h1>
       <div className="faq-list">
         {faqData.map((item, index) => (

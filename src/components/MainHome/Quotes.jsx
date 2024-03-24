@@ -24,7 +24,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container" id='quotes'>
       <h2>Random Quotes</h2>
       <div className="testimonials">
         {testimonials.map(testimonial => (

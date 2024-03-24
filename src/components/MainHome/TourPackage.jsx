@@ -3,7 +3,7 @@ import '../Styles/TourPackage.css';
 
 const TourPackageCard = ({ imgSrc, price, offer, placeName, placeCity }) => {
   return (
-    <div className="tour-package-card">
+    <div className="tour-package-card" id='packages'>
       <div className="offer">{offer}</div>
       <img src={imgSrc} alt={placeName} />
       <div className="pdetails">

@@ -31,11 +31,11 @@ class MainHome extends Component{
             <div >
             {/* <Navbar/> */}
             {/* <Navbar1/> */}
+            <BrowseByThemeTop/>
             <Hero/>
             {/* <Spiner/> */}
             {/* <Marquee/> */}
             {/* <Navbar1/> */}
-            <BrowseByThemeTop/>
             <TopCities/>
             <AllPlacesPackages/>
             <TopRecommendations/>

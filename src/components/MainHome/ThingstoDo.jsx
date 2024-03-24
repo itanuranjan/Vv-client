@@ -40,7 +40,7 @@ class ThingstoDo extends React.Component {
     
 
     return (
-      <div className="card3-carousel-container">
+      <div className="card3-carousel-container" id="things">
         <h3>Things to Do in India</h3>
         <Slider {...settings}>
           {card3Data.map((card) => (
