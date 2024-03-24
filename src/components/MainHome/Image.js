@@ -393,10 +393,52 @@ export const memoriesimages = [
   "https://ucarecdn.com/a3cf3905-074d-4f92-8d02-da047b214431/Snapchat1236441475.jpg",
 ];
 
+
+export const SimpleCardImages = [
+  {
+    id: 1,
+    title: "Har-Ki-Paudi",
+    city:"Rishikesh",
+    src: "https://ucarecdn.com/ae4bdacb-4ece-4ea3-a5a4-75e23e99e2a6/Haridwar.jpg",
+    alt:"Image1",
+    
+  },
+  {
+    id: 2,
+    title: "Prem Mandir",
+    city:"Vrindawan",
+    src: "https://ucarecdn.com/19cc03cb-6b76-47fb-a66a-1db56c7ea2b0/premmandir.jpg",
+    alt: "Image 2",
+  },
+  {
+    id: 3,
+    title: "Ganga AArti",
+    city:"Varanasi",
+    src: "https://ucarecdn.com/d5820543-8dd8-49a9-b022-36ed4103f780/varanasiaarti.jpg",
+    alt: "Image 3",
+  },
+  {
+    id: 4,
+    title: "Ram Mandir",
+    city:"Ayodhya",
+    src: "https://ucarecdn.com/c77e1c6f-fe71-42c6-b175-3e00be16871e/rammandirdupli.jpg",
+    alt: "Image 4",
+  },
+  {
+    id: 5,
+    title: "Ganga Ghat",
+    city:"Banaras",
+    src: "https://ucarecdn.com/6100971e-ee32-4e35-8fd4-b70f7dfedd7f/varanasighat.jpg",
+    alt: "Image 5",
+  },
+];
+
+
 export default {
   citiesData,
   Images,
   TopRecommendationscardData,
   card3Data,
   memoriesimages,
+  SimpleCardImages,
 };
