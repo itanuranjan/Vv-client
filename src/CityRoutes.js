@@ -27,6 +27,10 @@ import TeamPage from "./components/pages/TeamPage";
 import OurStoryPage from "./components/pages/OurStoryPage";
 import Gallery from "./components/pages/Gallary";
 import CareerPage from "./components/pages/Career";
+import QueryForm from "./components/MainHome/QueryForm";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy";
+import TermsCondition from "./components/pages/TermsCondition";
+import Cities from "./components/Cities/Cities";
 
 function CityRoutes() {
   return (
@@ -48,11 +52,21 @@ function CityRoutes() {
         <Route path="/career" element={<CareerPage />} />
         {/* <Route path="/" exact element={<TopCities />} /> */}
 
+        {/* //Raise Query Route */}
+        <Route path="/raise-query" element={<QueryForm />} />
+
+
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+        <Route path="/terms-of-usage" element={<TermsCondition />} />
+
 
 
       {/* //Cities Route */}
 
+        
         <Route path="/cities/varanasi" element={<Varanasi />} />
+        <Route path="/cities" element={<Cities />} />
         <Route path="/cities/new-delhi" element={<MainHome />} />
         <Route path="/cities/mumbai" element={<MainHome />} />
         <Route path="/cities/goa" element={<MainHome />} />
@@ -99,6 +113,24 @@ function CityRoutes() {
         <Route path="/admin/addhome/toprecommendation" element={<RecoInputData />} />
         <Route path="/admin/addhome/thingstodo" element={<ThingsToDoInputData />} />
         <Route path="/admin/addhome/gallery" element={<GallaryInputData />} />
+
+        {/* //TopRecommendation Places Route */}
+        <Route path="/places/prem-mandir" element={<MainHome />} />
+        <Route path="/places/ram-temple" element={<MainHome />} />
+        <Route path="/places/shimla" element={<MainHome />} />
+        <Route path="/places/manali" element={<MainHome />} />
+        <Route path="/places/taj-mahal" element={<MainHome />} />
+
+        {/* //Things to do Route */}
+        <Route path="/activities/experience-varanasi-at-dawn" element={<MainHome />} />
+        <Route path="/activities/set-your-eyes-on-tajmahal" element={<MainHome />} />
+        <Route path="/activities/world-largest-forest-sundarwan" element={<MainHome />} />
+        <Route path="/activities/camp-under-thar-desert" element={<MainHome />} />
+        <Route path="/activities/rajhurajpur-art-crafts-village" element={<MainHome />} />
+
+       {/* //Budget tour Route */}
+        <Route path="/budget-tour/kasmir" element={<MainHome />} />
+
       </Routes>
       <Footer />
     </Router>

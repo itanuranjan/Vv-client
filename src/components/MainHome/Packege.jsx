@@ -40,7 +40,7 @@ const EuropeGroupTourCard = () => {
         //   price="Starting at 1,62,000"
         //   description="Discover great deals for your next Holiday Package"
           image="https://ucarecdn.com/ec5ae9e4-4790-44ef-a54d-43e2a3e87455/apple.jpeg"
-          link="/budget-tour"
+          link="/budget-tour/kasmir"
         />
         {/* <PremiumCard
           title="Premium"

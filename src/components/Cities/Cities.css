@@ -1,0 +1,38 @@
+.responsive-card-carousel-wrapper1 {
+    max-width: 95%;
+    margin: 20px auto;
+    margin-top: 75px;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  .disallcity{
+    font-size: 20px;
+  }
+  
+  /* .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  } */
+  
+  @media (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .responsive-card-carousel-wrapper1 {
+        width: 87%;
+        /* z-index: -2; */
+      }
+  }
+  

@@ -5,7 +5,7 @@ const AboutUsPage = () => {
     return (
         <div className="about-us-page">
             <header>
-                <h1>About Us</h1>
+                {/* <h1>About Us</h1> */}
             </header>
             <section className="content">
                 <h2>Our Mission</h2>
@@ -21,6 +21,13 @@ const AboutUsPage = () => {
                     <li>Innovation</li>
                 </ul>
             </section>
+            <div className="iframe-container">
+                <iframe
+                    src="https://drive.google.com/file/d/1GZgA6XQwNxlkcZ9aIDfzIHO2gXoh9sL3/preview?usp=embed_googleplus"
+                    allowFullScreen
+                    title="Google Drive Video"
+                ></iframe>
+            </div>
         </div>
     );
 };
