@@ -6,65 +6,23 @@ const TeamPage = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'John Doe',
-      role: 'Frontend Developer',
-      position: 'Lead',
-      github: 'https://github.com/johndoe',
-      linkedin: 'https://www.linkedin.com/in/johndoe',
-      portfolio: 'https://www.johndoeportfolio.com',
+      name: 'Anuranjan Kumar',
+      role: 'FUll-Stack Developer',
+      position: 'Project Lead',
+      github: 'https://github.com/itanuranjan',
+      linkedin: 'https://www.linkedin.com/in/itanuranjan',
+      portfolio: 'https://www.anuportfolio.com',
       imageUrl: 'https://ucarecdn.com/fd4f2676-1408-47bb-a7ff-ceabaff1551f/-/preview/411x546/', // Placeholder image URL
-      details: 'John Doe is an experienced frontend developer...'
+      details: 'Anuranjan is an 6 Month experi-enced Full-Stack developer...'
     },
-    {
-      id: 2,
-      name: 'John Doe',
-      role: 'Frontend Developer',
-      position: 'Lead',
-      github: 'https://github.com/johndoe',
-      linkedin: 'https://www.linkedin.com/in/johndoe',
-      portfolio: 'https://www.johndoeportfolio.com',
-      imageUrl: 'https://ucarecdn.com/fd4f2676-1408-47bb-a7ff-ceabaff1551f/Profile.jpg', // Placeholder image URL
-      details: 'John Doe is an experienced frontend developer...'
-    },
-    {
-      id: 3,
-      name: 'John Doe',
-      role: 'Frontend Developer',
-      position: 'Lead',
-      github: 'https://github.com/johndoe',
-      linkedin: 'https://www.linkedin.com/in/johndoe',
-      portfolio: 'https://www.johndoeportfolio.com',
-      imageUrl: 'https://ucarecdn.com/fd4f2676-1408-47bb-a7ff-ceabaff1551f/Profile.jpg', // Placeholder image URL
-      details: 'John Doe is an experienced frontend developer...'
-    },
-    {
-      id: 3,
-      name: 'John Doe',
-      role: 'Frontend Developer',
-      position: 'Lead',
-      github: 'https://github.com/johndoe',
-      linkedin: 'https://www.linkedin.com/in/johndoe',
-      portfolio: 'https://www.johndoeportfolio.com',
-      imageUrl: 'https://ucarecdn.com/fd4f2676-1408-47bb-a7ff-ceabaff1551f/Profile.jpg', // Placeholder image URL
-      details: 'John Doe is an experienced frontend developer...'
-    },
-    {
-      id: 3,
-      name: 'John Doe',
-      role: 'Frontend Developer',
-      position: 'Lead',
-      github: 'https://github.com/johndoe',
-      linkedin: 'https://www.linkedin.com/in/johndoe',
-      portfolio: 'https://www.johndoeportfolio.com',
-      imageUrl: 'https://ucarecdn.com/fd4f2676-1408-47bb-a7ff-ceabaff1551f/Profile.jpg', // Placeholder image URL
-      details: 'John Doe is an experienced frontend developer...'
-    },
+    
     // Add more team members as needed
   ];
 
   return (
     <div className="team-page">
       <h1>Our Team</h1>
+      <hr></hr>
       <div className="team-members">
         {teamMembers.map(member => (
           <div key={member.id} className="team-member">
@@ -73,6 +31,7 @@ const TeamPage = () => {
               <h2>{member.name}</h2>
               <p>{member.role}</p>
               <p>{member.position}</p>
+              <p>{member.details}</p>
               <div className="social-links">
                 <a href={member.github} target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
@@ -84,7 +43,7 @@ const TeamPage = () => {
                   Portfolio
                 </a>
               </div>
-              <p>{member.details}</p>
+              
             </div>
           </div>
         ))}

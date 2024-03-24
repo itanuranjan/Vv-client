@@ -22,6 +22,7 @@ import HistoricalPlaces from './HistoricalPlaces';
 import EuropeGroupTourCard from './Packege';
 import AllPlacesPackages from './TourPackage';
 import ExpenseCalculator from './ExpenseCalculator';
+import SimpleCard from './SimpleCard';
 
 
 class MainHome extends Component{
@@ -31,12 +32,13 @@ class MainHome extends Component{
             <div >
             {/* <Navbar/> */}
             {/* <Navbar1/> */}
-            <BrowseByThemeTop/>
+            
             <Hero/>
             {/* <Spiner/> */}
             {/* <Marquee/> */}
             {/* <Navbar1/> */}
             <TopCities/>
+            <SimpleCard/>
             <AllPlacesPackages/>
             <TopRecommendations/>
             <ThingstoDo/>
@@ -55,7 +57,7 @@ class MainHome extends Component{
             {/* <ExpenseCalculator/> */}
             {/* <WeatherWidget/> */}
 
-
+            <BrowseByThemeTop/>
 
             {/* <Footer/> */}
 
