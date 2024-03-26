@@ -27,9 +27,8 @@
   box-sizing: border-box;
   border-radius: 10px;
   transition: opacity 0.3s ease;
-  /* color: white; */
   opacity: 1;
-  /* border: 2px solid blue; */
+
 }
 
 .simplecard:hover .simplecard-content {
@@ -53,9 +52,6 @@
 .simplecard:hover {
   transform: scale(1.05);
 }
-/* .simplecard:hover .simplecardslider-image {
-  transform: scale(1.05);
-} */
 
 
 @media (max-width: 768px) {
