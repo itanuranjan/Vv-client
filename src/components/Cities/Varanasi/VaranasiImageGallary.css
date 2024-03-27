@@ -1,0 +1,53 @@
+/* ResponsiveImageGallery.css */
+
+.image-gallery-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: aliceblue;
+}
+
+.image-gallery-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-gallery-column {
+  margin-bottom: 20px;
+}
+
+.image-gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+.image-gallery-image:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .image-gallery-container{
+        /* max-width: 95%; */
+    }
+  .image-gallery-column {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .image-gallery-container{
+        /* max-width: 95%; */
+    }
+  .image-gallery-column {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+}

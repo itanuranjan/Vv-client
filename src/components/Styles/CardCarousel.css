@@ -61,5 +61,13 @@ box-shadow: 12px 10px 6px -9px rgba(0,0,0,0.8);
     height: 270px;
     
   }
+  h3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .admin-link-button {
+    margin-top: 10px; /* Add spacing between the heading and the button */
+  }
   
 }

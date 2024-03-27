@@ -8,17 +8,12 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const CategoriesVaranasi = () => {
   const categories = [
     "Cities",
-    "Packages",
     "Recoment",
-    "WhyWe",
     "Things",
     "Historical",
-    "PkgExpense",
     "Review",
-    "Quotes",
     "Faqs",
-    "Query",
-    "Calculator",
+    "Gallery",
   ];
 
   const [selectedCategory, setSelectedCategory] = useState(null);

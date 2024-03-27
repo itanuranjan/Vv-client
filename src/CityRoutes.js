@@ -31,6 +31,30 @@ import QueryForm from "./components/MainHome/QueryForm";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import TermsCondition from "./components/pages/TermsCondition";
 import Cities from "./components/Cities/Cities";
+import BookingPage from "./components/pages/BookingPage";
+import VaranasiBookingPage from "./components/BookingPages/Varanasi";
+import LadakhBookingPage from "./components/BookingPages/Ladakh";
+import MussorieeBookingPage from "./components/BookingPages/Mussoriee";
+import DehradunBookingPage from "./components/BookingPages/Dehradun";
+import KulluBookingPage from "./components/BookingPages/Kullu";
+import AmerFort from "./components/PlaceDetailsPages/AmerFort";
+import RedFort from "./components/PlaceDetailsPages/RedFort";
+import GatewayofIndia from "./components/PlaceDetailsPages/GatewayofIndia";
+import GoldenTemple from "./components/PlaceDetailsPages/GoldenTemple";
+import HawaMahal from "./components/PlaceDetailsPages/HawaMahal";
+import TajMahal from "./components/PlaceDetailsPages/TajMahal";
+import Manali from "./components/PlaceDetailsPages/Manali";
+import Shimla from "./components/PlaceDetailsPages/Shimla";
+import RamTemple from "./components/PlaceDetailsPages/RamTemple";
+import PremMandir from "./components/PlaceDetailsPages/PremMandir";
+import ExperianceVaranasiatDawn from "./components/PlaceDetailsPages/ExperianceVaranasiatDawn";
+import SetYourEyeTajmahal from "./components/PlaceDetailsPages/SetYourEyeTajmahal";
+import MangroveForestSundarwan from "./components/PlaceDetailsPages/MangroveForestSundarwan";
+import CampUnderThar from "./components/PlaceDetailsPages/CampUnderThar";
+import DayRaghurajpurArt from "./components/PlaceDetailsPages/DayRaghurajpurArt";
+import CharMinar from "./components/PlaceDetailsPages/CharMinar";
+import JalianWalaBagh from "./components/PlaceDetailsPages/JalianWalaBagh";
+import QutubMinar from "./components/PlaceDetailsPages/QutubMinar";
 
 function CityRoutes() {
   return (
@@ -115,24 +139,60 @@ function CityRoutes() {
         <Route path="/admin/addhome/gallery" element={<GallaryInputData />} />
 
         {/* //TopRecommendation Places Route */}
-        <Route path="/places/prem-mandir" element={<MainHome />} />
+        {/* <Route path="/places/prem-mandir" element={<MainHome />} />
         <Route path="/places/ram-temple" element={<MainHome />} />
         <Route path="/places/shimla" element={<MainHome />} />
         <Route path="/places/manali" element={<MainHome />} />
-        <Route path="/places/taj-mahal" element={<MainHome />} />
+        <Route path="/places/taj-mahal" element={<MainHome />} /> */}
 
         {/* //Things to do Route */}
-        <Route path="/activities/experience-varanasi-at-dawn" element={<MainHome />} />
-        <Route path="/activities/set-your-eyes-on-tajmahal" element={<MainHome />} />
-        <Route path="/activities/world-largest-forest-sundarwan" element={<MainHome />} />
-        <Route path="/activities/camp-under-thar-desert" element={<MainHome />} />
-        <Route path="/activities/rajhurajpur-art-crafts-village" element={<MainHome />} />
+        <Route path="/activities/experience-varanasi-at-dawn" element={<ExperianceVaranasiatDawn />} />
+        <Route path="/activities/set-your-eyes-on-tajmahal" element={<SetYourEyeTajmahal />} />
+        <Route path="/activities/world-largest-forest-sundarwan" element={<MangroveForestSundarwan />} />
+        <Route path="/activities/camp-under-thar-desert" element={<CampUnderThar />} />
+        <Route path="/activities/rajhurajpur-art-crafts-village" element={<DayRaghurajpurArt />} />
 
        {/* //Budget tour Route */}
         <Route path="/budget-tour/kasmir" element={<MainHome />} />
 
 
-{/* 
+
+{/* //Tour Package Booking Route */}
+        <Route path="/book/varanasi" element={<VaranasiBookingPage />} />
+        <Route path="/book/ladakh" element={<LadakhBookingPage />} />
+        <Route path="/book/mussoriee" element={<MussorieeBookingPage />} />
+        <Route path="/book/dehradun" element={<DehradunBookingPage />} />
+        <Route path="/book/kullu" element={<KulluBookingPage />} />
+
+
+
+        
+        <Route path="/place/red-fort" element={<RedFort />} />
+        <Route path="/place/gateway-of-india" element={<GatewayofIndia />} />
+        <Route path="/place/golden-temple" element={<GoldenTemple />} />
+        <Route path="/place/hawa-mahal" element={<HawaMahal/>} />
+        <Route path="/place/amer-fort" element={<AmerFort />} />
+        <Route path="/place/aguada-fort" element={<AmerFort />} />
+
+
+
+        <Route path="/places/prem-mandir" element={<PremMandir />} />
+        <Route path="/places/ram-temple" element={<RamTemple />} />
+        <Route path="/places/shimla" element={<Shimla />} />
+        <Route path="/places/manali" element={<Manali />} />
+        <Route path="/places/taj-mahal" element={<TajMahal />} />
+
+
+
+
+        <Route path="/historical-place/qutub-minar" element={<QutubMinar />} />
+        <Route path="/historical-place/taj-mahal" element={<TajMahal />} />
+        <Route path="/historical-place/jaliwalah" element={<JalianWalaBagh />} />
+        <Route path="/historical-place/amer-fort" element={<AmerFort />} />
+        <Route path="/historical-place/char-minar" element={<CharMinar />} />
+
+
+{/*   
 
         <Route path="/category/Tickets" element={<QueryForm />} /> */}
 
