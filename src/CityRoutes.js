@@ -103,7 +103,7 @@ function CityRoutes() {
         <Route path="/cities/shillong" element={<MainHome />} />
 
         <Route
-          path="/cards/kashi-vishwanath-temple" element={<PlaceDetails />}
+          path="/cities/kashi-vishwanath-temple" element={<PlaceDetails />}
         />
         <Route path="/admin" exact element={<Admin />} />
         <Route path="/profile" exact element={<UserProfile />} />
