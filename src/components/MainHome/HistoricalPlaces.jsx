@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/HistoricalPlaces.css";
 import { Left, Right } from "./Arrows";
-import { card3Data } from "./Image";
+import { historicalplaces } from "./Image";
 
 class HistoricalPlaces extends React.Component {
   render() {
@@ -43,10 +43,10 @@ class HistoricalPlaces extends React.Component {
       <div className="hcard-carousel-container" id="historical">
         <h3>Historical places in India</h3>
         <Slider {...settings}>
-          {card3Data.map((card) => (
+          {historicalplaces.map((card) => (
             <Link
               key={card.id}
-              to={`/activities/${card.route}`}
+              to={`/historical-place/${card.route}`}
               className="hcard-link"
             >
               <div className="hcard">

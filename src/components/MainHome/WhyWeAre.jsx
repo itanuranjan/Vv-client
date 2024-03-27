@@ -6,14 +6,14 @@ const WhyWeAre = () => {
     {
       id: 1,
       imageUrl:
-        "https://ucarecdn.com/77a0233e-a4cb-4e3a-b061-238e743bd52c/emojismily.jpg",
-      title: "20 million +",
+        "https://ucarecdn.com/8f3afa94-412c-4f99-a27b-6fa296bfdfb1/emojismilyremovebgpreview.png",
+      title: " million +",
       para: "Happy customers across 10,000+ experiences",
     },
     {
       id: 2,
       imageUrl:
-        "https://ucarecdn.com/c67c531e-63ae-4128-9ff0-e6a574593a59/redstar.jpg",
+        "https://ucarecdn.com/c4e32aa7-0d9a-4162-a0d0-fa51f4c26ee5/redstarremovebgpreview.png",
       title: "4.4/5",
       para: "5,000+ verified reviews with 90% excellent score",
       //   role: "CTO, Company B"
@@ -21,16 +21,16 @@ const WhyWeAre = () => {
     {
       id: 3,
       imageUrl:
-        "https://ucarecdn.com/b6697d6c-3fb0-430b-9a98-e55e3d3c7e22/earthsave.jpg",
+        "https://ucarecdn.com/bb9f019c-8d5e-4ed5-a281-01c92fb47c7d/earthsaveremovebgpreview.png",
       title:
         "In the Media",
       para: "Featured and recommended by the best brands",
       //   role: "Designer, Company C"
     },
     {
-      id: 3,
+      id: 4,
       imageUrl:
-        "https://ucarecdn.com/e6d87329-61d7-4826-be30-5e414bce7a49/smilycare.jpg",
+        "https://ucarecdn.com/c3132a9f-8e6a-4b8e-be90-fc707500d664/smilycareremovebgpreview.png",
       title:
         "24 x 7 Help Center",
       para: "Have a question? Live chat with local experts anywhere, anytime",

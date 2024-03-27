@@ -29,17 +29,17 @@ const EuropeGroupTourCard = () => {
     <div className="pkg-container">
       <div className="left-side-text">
         {/* Add your left side text here */}
-        <h1>Kashmir</h1>
-        <p>Kashmir Tour Packages , Kashmir Tourism, Kashmir Honeymoon Packages.</p>
+        <h1>Shimla</h1>
+        <p>known as the Queen of the hills to its admirers is the capital of Himachal Pradesh state. The name Shimla, has been derived from Goddess Shymala Devi, who is a manifestation of the Goddess Kali.</p>
        
       </div>
       <div className="pkgcard-container">
         <Card
         //   title="Budget"
-          subtitle="Kashmir the heart of India"
+          subtitle="the Queen of the hills"
         //   price="Starting at 1,62,000"
         //   description="Discover great deals for your next Holiday Package"
-          image="https://ucarecdn.com/ec5ae9e4-4790-44ef-a54d-43e2a3e87455/apple.jpeg"
+          image="https://ucarecdn.com/3842c18e-e800-4504-b2d9-c8e15238eccb/-/preview/977x476/"
           link="/budget-tour/kasmir"
         />
         {/* <PremiumCard

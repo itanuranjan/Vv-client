@@ -12,6 +12,7 @@ import ReviewsVaranasi from './ReviewsVaranasi';
 import FaqsVaranasi from './FaqsVaranasi';
 import ExpenseCalculator from '../../MainHome/ExpenseCalculator';
 import CategoriesVaranasi from './CategoriesVaranasi';
+import VaranasiImageGallary from './VaranasiImageGallary';
 // import CustomReviewCard from './Review';
 
 
@@ -33,8 +34,9 @@ class Varanasi extends Component{
             <ReviewsVaranasi/>
             <FaqsVaranasi/>
             <ExpenseCalculator/>
-            <ResponsiveImageGallery/>
+            {/* <ResponsiveImageGallery/> */}
             <CategoriesVaranasi/>
+            <VaranasiImageGallary/>
             {/* <CustomReviewCard/> */}
         
 

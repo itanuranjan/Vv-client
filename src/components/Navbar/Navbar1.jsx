@@ -23,7 +23,7 @@ const Navbar = () => {
       setWelcomeMessageDisplayed(true);
       setTimeout(() => {
         setShowWelcomeMessage(false);
-      }, 100000);
+      }, 1000);
     }
   }, [location, welcomeMessageDisplayed]);
 
