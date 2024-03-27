@@ -351,6 +351,15 @@ export const ThingsToDo = [
       "route": "tour-to-sarnath"
     },
   ];
+
+  // export const  = [
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  // ];
   
   export default {
     TopPlacesVaranasi,
