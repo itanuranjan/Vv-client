@@ -27,6 +27,7 @@ const SimpleCard = () => {
   return (
     <div>
       <div className="simplecard-container">
+      <h3>Most Visited Places</h3>
         <Slider {...settings}>
           {SimpleCardImages.map((item) => (
             <div key={item.id}>
