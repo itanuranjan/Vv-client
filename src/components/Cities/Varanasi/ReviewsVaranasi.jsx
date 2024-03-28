@@ -19,6 +19,7 @@ class ReviewsVaranasi extends React.Component {
       initialSlide: 0,
       responsive: [
         {
+          
           breakpoint: 768,
           settings: {
             slidesToShow: 1.01,
