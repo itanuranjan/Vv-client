@@ -17,8 +17,8 @@ const TourPackageCard = ({ imgSrc, price, offer, placeName, placeCity, route }) 
       <div className="pdetails">
         <h4>{placeName}</h4>
         <p>{placeCity}</p>
-        <p>Price: ${price}</p>
-        <Link to={`/book/${route}`}><button onClick={handleBook}>Book Now</button></Link>
+        <p>Price:<span>&#8377;</span> {price}</p>
+        <Link to={`/book/${route}`}><button className='book-ticket'  onClick={handleBook}>Book Now</button></Link>
       </div>
     </div>
   );

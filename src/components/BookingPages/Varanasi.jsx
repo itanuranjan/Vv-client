@@ -15,13 +15,16 @@ const placesData = [
 const VaranasiBookingPage = () => {
   const [selectedDate, setSelectedDate] = useState('');
   const [quantity, setQuantity] = useState(1);
-  const [price, setPrice] = useState(1000); // Default price per ticket
+  const initialPrice = 1000;
+  const discount = initialPrice * 0.1; // 10% discount
 
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value);
     setQuantity(newQuantity);
-    setPrice(newQuantity * 1000); // Calculate price based on quantity
   };
+
+  const totalPrice = (initialPrice - discount) * quantity;
+
 
   const handleBookClick = () => {
     console.log('Navigate to payment page');
@@ -58,7 +61,7 @@ const VaranasiBookingPage = () => {
         <input
           type="text"
           id="price"
-          value={`RS : ${price}`}
+          value={`RS : ${totalPrice}`}
           readOnly
         />
         <button onClick={handleBookClick}>Book Now</button>

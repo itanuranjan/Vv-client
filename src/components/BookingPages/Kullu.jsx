@@ -4,24 +4,26 @@ import '../Styles/BookingPage.css';
 const placesData = [
   {
     id: 1,
-    name: 'Varanasi Tour',
-    description: "Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred waters and perform funeral rites. Along the city's winding streets are some 2,000 temples, including Kashi Vishwanath, the “Golden Temple,” dedicated to the Hindu god Shiva.",
-    image: 'https://ucarecdn.com/f16d39ff-edf2-4141-997e-ffd73750ac49/ReliveYourHistory.jpg',
-    details: 'Details of Varanasi',
-    ride: 'Ghats, Aarti, and many more places',
+    name: 'Kullu Tour',
+    description: "Kullu is a district in Himachal Pradesh, India. The district stretches from the village of Rampur in the south to the Rohtang Pass in the north. The largest valley in the district is called the Kullu Valley, which is also known as the Valley of the Gods. Kullu valley is famous for its temples, beauty and its majestic hills covered with pine and deodar forest and sprawling apple orchards.",
+    image: 'https://ucarecdn.com/f0c009d4-f081-429b-beca-ef23bcafc23b/kullu.jpeg',
+    details: 'Details of Kullu',
+    ride: 'Great Himalayan National Park, Rafting in Beas River, and many more places',
   },
 ];
 
 const KulluBookingPage = () => {
   const [selectedDate, setSelectedDate] = useState('');
   const [quantity, setQuantity] = useState(1);
-  const [price, setPrice] = useState(2500); // Default price per ticket
+  const initialPrice = 2500;
+  const discount = initialPrice * 0.25; // 25% discount
 
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value);
     setQuantity(newQuantity);
-    setPrice(newQuantity * 2500); // Calculate price based on quantity
   };
+
+  const totalPrice = (initialPrice - discount) * quantity;
 
   const handleBookClick = () => {
     console.log('Navigate to payment page');
@@ -58,7 +60,7 @@ const KulluBookingPage = () => {
         <input
           type="text"
           id="price"
-          value={`RS : ${price}`}
+          value={`RS : ${totalPrice}`}
           readOnly
         />
         <button onClick={handleBookClick}>Book Now</button>

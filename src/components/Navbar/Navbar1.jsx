@@ -88,7 +88,7 @@ const Navbar = () => {
 
       {showWelcomeMessage && (
         <div className="welcome-message">
-          <h2>Welcome, {displayUserName()}!</h2>
+          {/* <h2>Welcome, {displayUserName()}!</h2> */}
         </div>
       )}
 

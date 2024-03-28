@@ -462,8 +462,8 @@ export const tourPackages = [
   {
     id:2,
     imgSrc: 'https://ucarecdn.com/701e62ca-679a-454f-94bb-bc011b0f2b08/-/preview/400x400/',
-    price: 1000,
-    offer: '10% off',
+    price: 2000,
+    offer: '15% off',
     placeName: 'Ladakh',
     placeCity: 'Ladakh',
     route:'ladakh',
@@ -471,8 +471,8 @@ export const tourPackages = [
   {
     id:3,
     imgSrc: 'https://ucarecdn.com/ef649365-520b-401b-89ba-a4a5f404b792/-/preview/400x400/',
-    price: 1000,
-    offer: '10% off',
+    price: 3000,
+    offer: '20% off',
     placeName: 'Mussoriee',
     placeCity: 'Mussoriee',
     route:'mussoriee',
@@ -480,7 +480,7 @@ export const tourPackages = [
   {
     id:4,
     imgSrc: 'https://ucarecdn.com/14936592-a3ee-45ef-8366-b0a9e129dc62/-/preview/400x400/',
-    price: 1500,
+    price: 4000,
     offer: '10% off',
     placeName: 'Dehradun',
     placeCity: 'Dehradun',
@@ -489,8 +489,8 @@ export const tourPackages = [
   {
     id:5,
     imgSrc: 'https://ucarecdn.com/f0c009d4-f081-429b-beca-ef23bcafc23b/-/preview/400x400/',
-    price: 1100,
-    offer: '10% off',
+    price: 2500,
+    offer: '25% off',
     placeName: 'Kullu',
     placeCity: 'Kullu',
     route:'Kullu',
