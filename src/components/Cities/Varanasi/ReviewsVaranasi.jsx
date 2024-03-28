@@ -6,53 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../Styles/Review.css";
 import { Left, Right } from "../../MainHome/Arrows";
 import { FaStar } from "react-icons/fa";
+import { varanasiplacesreview } from "./Images";
 
 class ReviewsVaranasi extends React.Component {
-  // Sample data for demonstration
-  card3Data = [
-    {
-      id: 1,
-      imageUrl: "https://ucarecdn.com/6100971e-ee32-4e35-8fd4-b70f7dfedd7f/varanasighat.jpg",
-      // title: "Title 1",
-      rating: 4,
-      username: "Anuranjan",
-      reviewText: "A review on softlist.io praises DeepAI's ability to explore different artistic styles and allow users to choose a distinct aesthetic. ",
-    },
-    {
-      id: 2,
-      imageUrl: "https://ucarecdn.com/d5820543-8dd8-49a9-b022-36ed4103f780/varanasiaarti.jpg",
-      // title: "Title 2",
-      rating: 5,
-      username: "Rocky",
-      reviewText: "A review on softlist.io praises DeepAI's ability to explore different artistic styles and allow users to choose a distinct aesthetic. ",
-    },
-    {
-      id: 3,
-      imageUrl: "https://ucarecdn.com/19cc03cb-6b76-47fb-a66a-1db56c7ea2b0/premmandir.jpg",
-      // title: "Title 2",
-      rating: 2,
-      username: "Rocky",
-      reviewText: "A review on softlist.io praises DeepAI's ability to explore different artistic styles and allow users to choose a distinct aesthetic. ",
-    },
-    {
-      id: 4,
-      imageUrl: "https://ucarecdn.com/6100971e-ee32-4e35-8fd4-b70f7dfedd7f/varanasighat.jpg",
-      // title: "Title 2",
-      rating: 3,
-      username: "Rocky",
-      reviewText: "A review on softlist.io praises DeepAI's ability to explore different artistic styles and allow users to choose a distinct aesthetic. ",
-    },
-    {
-      id: 5,
-      imageUrl: "https://ucarecdn.com/c77e1c6f-fe71-42c6-b175-3e00be16871e/rammandirdupli.jpg",
-      // title: "Title 2",
-      rating: 4,
-      username: "Rocky",
-      reviewText: "A review on softlist.io praises DeepAI's ability to explore different artistic styles and allow users to choose a distinct aesthetic. ",
-    },
-    // Add more sample data as needed
-  ];
-
+ 
   render() {
     const settings = {
       infinite: true,
@@ -85,7 +42,7 @@ class ReviewsVaranasi extends React.Component {
       <div className="review-card-container1" id="review">
         <h3 className="review-card-h1title" ><span class="red-star">★</span>Places Reviews <span class="red-star">★</span></h3>
         <Slider {...settings}>
-          {this.card3Data.map((card) => (
+          {varanasiplacesreview.map((card) => (
             <div key={card.id} className="review-card">
               <img src={card.imageUrl} alt={card.title} />
               <div className="review-card-body">

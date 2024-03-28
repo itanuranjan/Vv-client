@@ -109,6 +109,14 @@
 .next {
   right: 10px;
 }
+.book-ticket{
+  padding: 8px 8px;
+  border: 1px solid white;
+}
+.book-ticket:hover{
+  background-color: rgb(45, 21, 220);
+  border: 1px solid black;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {

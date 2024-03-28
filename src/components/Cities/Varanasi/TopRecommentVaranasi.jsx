@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../../Styles/TopRecommendations.css'; // Change the CSS file name
 import { Left, Right } from '../../MainHome/Arrows';
-import { TopRecommendationscardData } from '../../MainHome/Image';
+import { TopRecommendationscardData } from './Images';
 
 class TopRecommentVaranasi extends React.Component {
   constructor(props) {

@@ -4,24 +4,26 @@ import '../Styles/BookingPage.css';
 const placesData = [
   {
     id: 1,
-    name: 'Varanasi Tour',
-    description: "Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred waters and perform funeral rites. Along the city's winding streets are some 2,000 temples, including Kashi Vishwanath, the “Golden Temple,” dedicated to the Hindu god Shiva.",
-    image: 'https://ucarecdn.com/f16d39ff-edf2-4141-997e-ffd73750ac49/ReliveYourHistory.jpg',
-    details: 'Details of Varanasi',
-    ride: 'Ghats, Aarti, and many more places',
+    name: 'Dehradun Tour',
+    description: "Dehradun is the capital city of the Indian state of Uttarakhand, near the Himalayan foothills. At its core is the 6-sided Ghanta Ghar clock tower. To the southwest is Paltan Bazaar, a busy shopping area. Just east is the Sikh temple Gurdwara Nanaksar, topped with ornate white and golden domes. In Clement Town to the city’s southwest, Mindrolling Monastery is a Tibetan Buddhist center with shrine rooms in its Great Stupa.",
+    image: 'https://ucarecdn.com/14936592-a3ee-45ef-8366-b0a9e129dc62/dehradun.jpeg',
+    details: 'Details of Dehradun',
+    ride: 'Robber’s Cave, Sahastradhara, and many more places',
   },
 ];
 
 const DehradunBookingPage = () => {
   const [selectedDate, setSelectedDate] = useState('');
   const [quantity, setQuantity] = useState(1);
-  const [price, setPrice] = useState(4000); // Default price per ticket
+  const initialPrice = 4000;
+  const discount = initialPrice * 0.1; // 10% discount
 
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value);
     setQuantity(newQuantity);
-    setPrice(newQuantity * 4000); // Calculate price based on quantity
   };
+
+  const totalPrice = (initialPrice - discount) * quantity;
 
   const handleBookClick = () => {
     console.log('Navigate to payment page');
@@ -58,7 +60,7 @@ const DehradunBookingPage = () => {
         <input
           type="text"
           id="price"
-          value={`RS : ${price}`}
+          value={`RS : ${totalPrice}`}
           readOnly
         />
         <button onClick={handleBookClick}>Book Now</button>

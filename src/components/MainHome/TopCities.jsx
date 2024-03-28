@@ -68,7 +68,10 @@ const ResponsiveCardCarousel = () => {
             cursor: 'pointer',
           }}
         >
-          Add Missing Places
+          <span
+      style={{ fontSize: '20px' }}
+      dangerouslySetInnerHTML={{ __html: '&#8594;' }}
+    ></span>Add Missing Places
         </button>
       </h3>
 

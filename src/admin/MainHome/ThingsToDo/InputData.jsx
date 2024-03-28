@@ -17,7 +17,7 @@ function InputData() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/api/thingstodo", formData)
+    axios.post("https://venturevibe-server.onrender.com/api/thingstodo", formData)
       .then((response) => {
         alert("Data added successfully:", response.data);
         setFormData({

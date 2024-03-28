@@ -19,7 +19,7 @@ function InputData() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/api/toprecommented", formData)
+    axios.post("https://venturevibe-server.onrender.com/api/toprecommented", formData)
       .then((response) => {
         alert("Data added successfully:", response.data);
         setFormData({

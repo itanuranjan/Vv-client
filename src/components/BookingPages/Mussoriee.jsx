@@ -4,24 +4,26 @@ import '../Styles/BookingPage.css';
 const placesData = [
   {
     id: 1,
-    name: 'Varanasi Tour',
-    description: "Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s sacred waters and perform funeral rites. Along the city's winding streets are some 2,000 temples, including Kashi Vishwanath, the “Golden Temple,” dedicated to the Hindu god Shiva.",
-    image: 'https://ucarecdn.com/f16d39ff-edf2-4141-997e-ffd73750ac49/ReliveYourHistory.jpg',
-    details: 'Details of Varanasi',
-    ride: 'Ghats, Aarti, and many more places',
+    name: 'Mussoriee Tour',
+    description: "Mussoorie is a hill station and a municipal board in the Dehradun District of the Indian state of Uttarakhand. It is about 35 kilometres (22 mi) from the state capital of Dehradun and 290 km (180 mi) north of the national capital of New Delhi. The hill station is in the foothills of the Garhwal Himalayan range.",
+    image: 'https://ucarecdn.com/ef649365-520b-401b-89ba-a4a5f404b792/mussorie.jpeg',
+    details: 'Details of Mussoriee',
+    ride: 'Kempty Falls, Gun Hill, and many more places',
   },
 ];
 
 const MussorieeBookingPage = () => {
   const [selectedDate, setSelectedDate] = useState('');
   const [quantity, setQuantity] = useState(1);
-  const [price, setPrice] = useState(3000); // Default price per ticket
+  const initialPrice = 3000;
+  const discount = initialPrice * 0.2; // 20% discount
 
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value);
     setQuantity(newQuantity);
-    setPrice(newQuantity * 3000); // Calculate price based on quantity
   };
+
+  const totalPrice = (initialPrice - discount) * quantity;
 
   const handleBookClick = () => {
     console.log('Navigate to payment page');
@@ -58,7 +60,7 @@ const MussorieeBookingPage = () => {
         <input
           type="text"
           id="price"
-          value={`RS : ${price}`}
+          value={`RS : ${totalPrice}`}
           readOnly
         />
         <button onClick={handleBookClick}>Book Now</button>

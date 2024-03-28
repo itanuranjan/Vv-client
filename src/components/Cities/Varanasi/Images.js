@@ -370,53 +370,187 @@ export const ThingsToDo = [
   export const TopRecommendationscardData = [
     {
       id: 1,
-      title: "Prem Mandir, Vrindavan",
+      title: "Assi Ghat",
       description:
-        "The temple was established by Jagadguru Shri Kripalu Ji Maharaj. It is maintained by Jagadguru Kripalu Parishat, an international non-profit, educational, spiritual, charitable trust.The temple was established by Jagadguru",
-      imageUrl:
-        "https://ucarecdn.com/2d2ff2f4-0152-46b5-8fa0-a9de5028603d/-/preview/600x400/",
-      route: "prem-mandir",
+        "This is another popular destination on the list of tourist destinations in Varanasi that you must visit. This beautiful ghat (river bank) offers you a peaceful experience if you’re looking to get away from the hustle and bustle of the city. Relaxing under the peepal trees or taking a relaxing boat ride to watch the panoramic sunset is something to do while visiting Assi Ghat.",
+      imageUrl:"https://ucarecdn.com/142bbf6c-7cc3-4388-8559-5078601f5568/assighat.jpg",
+      route: "assi-ghat",
       ratings: 4.9,
       price: "$200",
     },
- 
+    {
+      id: 2,
+      title: "Morning Boat Rides",
+      description:"Boat rides during dawn is an ethereal experience where you watch the sunrise, visit various ghats, see old palaces and enjoy the spiritual ecstasy that Varanasi is famous for.",
+      imageUrl:"https://ucarecdn.com/292a56aa-79ee-4de5-93d8-d81ab143db53/morning.avif",
+      route: "morning-boat-rides",
+      ratings: 4.9,
+      price: "$50",
+    },
+    {
+      id: 2,
+      title: "Morning Boat Rides",
+      description:"Boat rides during dawn is an ethereal experience where you watch the sunrise, visit various ghats, see old palaces and enjoy the spiritual ecstasy that Varanasi is famous for.",
+      imageUrl:"https://ucarecdn.com/292a56aa-79ee-4de5-93d8-d81ab143db53/morning.avif",
+      route: "morning-boat-rides",
+      ratings: 4.9,
+      price: "$50",
+    },
+    {
+      id: 3,
+      title: "vindham waterfalls",
+      description:"Vindham waterfall is an ideal spot for the tourists. The waterfall is near Varanasi in Mirzapur district of Uttar Pradesh. The wonderful cataract is managed through the woodland division of Mirzapur. The recreation area, van Vihar and various other tourist destinations allure the tourists. Just at a distance of about 2 km form the Vindham waterfall there is a Tanda Fountain which adds beauty to the tour. Tourists visit Mirzapur for temples, ghats, clock towers and contemporary architecture. One cannot forget to see the cave painting of nearly 800 BC of riding horse charioteers that is about to hurl a wheel and this painting is identified as of lord Krishna. The inheritance of Mirzapur is of India fame.",
+      imageUrl:"https://ucarecdn.com/8d934a59-bfc7-493c-be70-b8ba16c59b17/bnrs.jpeg",
+      route: "vindham-waterfalls",
+      ratings: 4.9,
+      price: "$50",
+    },
+    {
+      id: 4,
+      title: "Subah-e-Banaras",
+      description:"The morning of Varanasi is a mystic blend of nature’s grandeur and human existence. The enchanting light of the rising sun on the horizon towards the opposite bank of the river Ganga creates a mystical environment.",
+      route: "Subah-e-Banaras",
+      ratings: 4.9,
+      price: "$20",
+    },
+    {
+      id: 5,
+      title: "vindham waterfalls",
+      description:"Vindham waterfall is an ideal spot for the tourists. The waterfall is near Varanasi in Mirzapur district of Uttar Pradesh. The wonderful cataract is managed through the woodland division of Mirzapur. The recreation area, van Vihar and various other tourist destinations allure the tourists. Just at a distance of about 2 km form the Vindham waterfall there is a Tanda Fountain which adds beauty to the tour. Tourists visit Mirzapur for temples, ghats, clock towers and contemporary architecture. One cannot forget to see the cave painting of nearly 800 BC of riding horse charioteers that is about to hurl a wheel and this painting is identified as of lord Krishna. The inheritance of Mirzapur is of India fame.",
+      imageUrl:"https://ucarecdn.com/8d934a59-bfc7-493c-be70-b8ba16c59b17/bnrs.jpeg",
+      route: "vindham-waterfalls",
+      ratings: 4.9,
+      price: "$50",
+    },
+  
   ];
-
   export const histocicalplacesvaranasi = [
     {
       id: 1,
-    title: "Qutub Minar",
-    city: "Delhi",
-    imageUrl:"https://ucarecdn.com/3a452ea7-fbb2-4e5f-8177-9f8ac24ecd27/qutubminar.jpeg",
-    route: "qutub-minar",
+      title: "Banaras Hindu University (BHU)",
+      city: "Varanasi",
+      imageUrl:"https://ucarecdn.com/76fe8247-b0cd-4bf7-a531-16d16942e24f/bhu.cms",
+      route: "bhu",
     },
- 
+    {
+      id: 2,
+      title: "Sarnarth",
+      city: "Varanasi",
+      imageUrl:"https://ucarecdn.com/c59420b2-c162-4ada-8aa7-42e9d86e0082/sarnarth.jpg",
+      route: "sarnarth",
+    },
+    {
+      id: 3,
+      title: "Ramnagar Fort",
+      city: "Varanasi",
+      imageUrl:"https://ucarecdn.com/f30d2671-3e6c-47a8-9188-0f7c245e9b01/ramnagar.jpg",
+      route: "ramnagar-fort",
+    },
+    {
+      id: 4,
+      title: "Kashi Vishwanath Temple",
+      city: "Varanasi",
+      imageUrl:"https://ucarecdn.com/a0e49baf-cc12-46b1-a631-ae5d72506355/kashi.jpg",
+      route: "kasi-viswanath",
+    },
+    {
+      id: 5,
+      title: "Dashashwamedh Ghat",
+      city: "Varanasi",
+      imageUrl:"https://ucarecdn.com/3878ecc7-4e5b-4cf5-8026-fd1eee890d1c/dasha.jpg",
+      route: "dashashwamedh",
+    },
+  
   ];
-
   export const varanasiplacesreview = [
     {
       id: 1,
-      imageUrl: "https://ucarecdn.com/56164ad6-2c36-424d-a8fc-54ef5aac15a3/tajmahal.jpeg",
-       title: "Tajmahal",
+      imageUrl: "https://ucarecdn.com/3878ecc7-4e5b-4cf5-8026-fd1eee890d1c/dasha.jpg",
+      title: "Dashashwamedh Ghat",
       rating: 4,
       username: "Anuranjan",
-      reviewText: "A review on softlist.io praises DeepAI's ability to explore different artistic styles and allow users to choose a distinct aesthetic. ",
+      reviewText: "One of the oldest and most important ghats (riverfront steps leading to the river) on the Ganges River. It's believed that Lord Brahma performed the Dasa Ashwamedha sacrifice here.",
     },
- 
+    {
+      id: 2,
+      imageUrl: "https://ucarecdn.com/a0e49baf-cc12-46b1-a631-ae5d72506355/kashi.jpg",
+      title: "Kashi Vishwanath Temple",
+      rating: 4,
+      username: "Akanksha",
+      reviewText: " One of the holiest temples in Hinduism dedicated to Lord Shiva. The current structure dates back to the 18th century, but the original temple was believed to be much older.",
+    },
+    {
+      id: 3,
+      imageUrl: "https://ucarecdn.com/c59420b2-c162-4ada-8aa7-42e9d86e0082/sarnarth.jpg",
+      title: "Sarnarth",
+      rating: 5,
+      username: "Akanksha",
+      reviewText: "Located just outside Varanasi, Sarnath is where Lord Buddha gave his first sermon after attaining enlightenment. It's home to numerous stupas, monasteries, and the Ashoka Pillar with its famous lion capital.",
+    },
+    {
+      id: 4,
+      imageUrl: "https://ucarecdn.com/f30d2671-3e6c-47a8-9188-0f7c245e9b01/ramnagar.jpg",
+      title: "Ramnagar Fort",
+      rating: 4,
+      username: "Anuranjan",
+      reviewText: " Located on the eastern bank of the Ganges River, this 18th-century fort was the residence of the Maharaja of Varanasi. It houses a museum displaying vintage cars, royal artifacts, and manuscripts",
+    },
+    {
+      id: 5,
+      imageUrl: "https://ucarecdn.com/76fe8247-b0cd-4bf7-a531-16d16942e24f/bhu.cms",
+      title: "Banaras Hindu University",
+      rating: 5,
+      username: "Akanksha",
+      reviewText: " Founded by Pandit Madan Mohan Malaviya in 1916, BHU is one of the largest residential universities in Asia. It houses several notable buildings, including the Vishwanath Temple within its campus.",
+    },
+  
   ];
-
   export const varanasifaqs = [
     {
       question: "What destinations do you offer?",
       answer:
         "We offer a wide range of destinations across the globe including popular tourist spots, off-the-beaten-path locations, and adventure destinations.",
     },
- 
-  ];
-
+    {
+      question:" Does Intrepid have family trips?",
+      answer:"Intrepid offers a wide range of Family Adventures around the globe. The minimum age (for Family trips) varies depending on the destination, and Intrepid has set minimum ages to ensure that the included activities suit each age range. Additionally, you’ll notice that some of the more adventurous destinations have a higher minimum age. Please check out our Family Adventures for more information.",
+    },
+    {
+      question:"Who are Intrepid travellers?",
+      answer:"Intrepid adventures are for travellers with a yearning to get off the beaten track. Whether you're travelling solo, with a group of friends, or are aged 18 or 70, there is an Intrepid adventure to suit your interests and comfort level. Each Intrepid adventure has a physical and cultural grading to help you decide if the trip is right for you. No special skills are required for most adventures, just a sense of adventure and a curiosity about the world. Even on our camping adventures no previous experience is required; our tents are easy to set up, even for first-time campers.",
+    },
+    {
+      question:"Are there age restrictions on your trips?",
+      answer:"For the majority of our trips the minimum age is 15. An adult must accompany all children under the age of 18. Our Overland Adventures have a minimum age of 18. Younger children can join us on our Family trips and Short Break Adventures, but check each trip for its minimum age, which is located on the trip’s overview page on the website. Most of our trips don’t have a maximum age limit, but a Self-Assessment Form is required for all travellers 70 years and over.",
+    },
+    {
+      question:"I’m travelling alone – is that OK?",
+      answer:"This is the beauty of the Intrepid style of travel: many of our travellers join because they are travelling solo and want to meet and share experiences with like-minded people.",
+    },
+    {
+      question:"How many people will be on my trip?",
+      answer:"Good things come in small packages, which is why we keep our group sizes down. This means we’re small enough to remain flexible as we thread our way through communities without intimidating the locals. On most of our trips you’ll be part of an intimate group of 12-16 people, though our group sizes are on average 10 people. Our Overland trips are in purpose-built vehicles that can carry up to 24 travellers. Group sizes are displayed on each trip’s overview page on our website.",
+    },
+    {
+      question:"I have special dietary requirements – will they be catered for?",
+      answer:"We will try our very hardest to accommodate all dietary requirements but in some out-of-the-way places it can be very difficult to guarantee. We will let you know if there are places on your itinerary where this is the case. Please let us know at the time of booking of any food requirements or allergies and we’ll pass the information onto your leader. It is also a great idea to bring a card with your dietary requirements written in the local language for those times you are eating away from the group.",
+    },
+    {
+      question:"What will the food be like on my trip?",
+      answer:"Food is one of the most exciting parts of travel. There may be some familiar fare but often you’ll be confronted with the new, interesting and downright weird of the culinary world but we like to think of it as an adventure for all the senses. In addition to this, our flexible itineraries often allow you to eat with the group or branch out on your own - this means you can eat to suit any budget or desire.",
+    },
+    {
+      question:"Can I drink the water in the countries I visit?",
+      answer:"In some destinations it may not be wise to drink the local water. For more details, you can find country-specific information in our destination pages, which can be found in the red menu bar at the top of our home page.",
+    },
   
+  ];
   export default {
     TopPlacesVaranasi,
     ThingsToDo,
     TopRecommendationscardData,
-  };  
+    histocicalplacesvaranasi,
+    varanasiplacesreview,
+    varanasifaqs,
+    varanasiimagegallary,
+    }; 
