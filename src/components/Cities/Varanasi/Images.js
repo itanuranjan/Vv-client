@@ -513,11 +513,11 @@ export const ThingsToDo = [
     },
     {
       question:" Does Intrepid have family trips?",
-      answer:"Intrepid offers a wide range of Family Adventures around the globe. The minimum age (for Family trips) varies depending on the destination, and Intrepid has set minimum ages to ensure that the included activities suit each age range. Additionally, you’ll notice that some of the more adventurous destinations have a higher minimum age. Please check out our Family Adventures for more information.",
+      answer:"Intrepid offers a wide range of Family Adventures around the globe. The minimum age (for Family trips) varies depending on the destination, and Intrepid has set minimum ages to ensure that the included activities suit each age range.",
     },
     {
       question:"Who are Intrepid travellers?",
-      answer:"Intrepid adventures are for travellers with a yearning to get off the beaten track. Whether you're travelling solo, with a group of friends, or are aged 18 or 70, there is an Intrepid adventure to suit your interests and comfort level. Each Intrepid adventure has a physical and cultural grading to help you decide if the trip is right for you. No special skills are required for most adventures, just a sense of adventure and a curiosity about the world. Even on our camping adventures no previous experience is required; our tents are easy to set up, even for first-time campers.",
+      answer:"Intrepid adventures are for travellers with a yearning to get off the beaten track. Whether you're travelling solo, with a group of friends, or are aged 18 or 70, there is an Intrepid adventure to suit your interests and comfort level. Each Intrepid adventure has a physical and cultural grading to help you decide if the trip is right for you.",
     },
     {
       question:"Are there age restrictions on your trips?",
@@ -529,19 +529,19 @@ export const ThingsToDo = [
     },
     {
       question:"How many people will be on my trip?",
-      answer:"Good things come in small packages, which is why we keep our group sizes down. This means we’re small enough to remain flexible as we thread our way through communities without intimidating the locals. On most of our trips you’ll be part of an intimate group of 12-16 people, though our group sizes are on average 10 people. Our Overland trips are in purpose-built vehicles that can carry up to 24 travellers. Group sizes are displayed on each trip’s overview page on our website.",
+      answer:"Good things come in small packages, which is why we keep our group sizes down. This means we’re small enough to remain flexible as we thread our way through communities without intimidating the locals. On most of our trips you’ll be part of an intimate group of 12-16 people, though our group sizes are on average 10 people.",
     },
     {
       question:"I have special dietary requirements – will they be catered for?",
-      answer:"We will try our very hardest to accommodate all dietary requirements but in some out-of-the-way places it can be very difficult to guarantee. We will let you know if there are places on your itinerary where this is the case. Please let us know at the time of booking of any food requirements or allergies and we’ll pass the information onto your leader. It is also a great idea to bring a card with your dietary requirements written in the local language for those times you are eating away from the group.",
+      answer:"We will try our very hardest to accommodate all dietary requirements but in some out-of-the-way places it can be very difficult to guarantee. We will let you know if there are places on your itinerary where this is the case. Please let us know at the time of booking of any food requirements or allergies and we’ll pass the information onto your leader.",
     },
     {
       question:"What will the food be like on my trip?",
-      answer:"Food is one of the most exciting parts of travel. There may be some familiar fare but often you’ll be confronted with the new, interesting and downright weird of the culinary world but we like to think of it as an adventure for all the senses. In addition to this, our flexible itineraries often allow you to eat with the group or branch out on your own - this means you can eat to suit any budget or desire.",
+      answer:"Food is one of the most exciting parts of travel. There may be some familiar fare but often you’ll be confronted with the new, interesting and downright weird of the culinary world but we like to think of it as an adventure for all the senses. In addition to this.",
     },
     {
       question:"Can I drink the water in the countries I visit?",
-      answer:"In some destinations it may not be wise to drink the local water. For more details, you can find country-specific information in our destination pages, which can be found in the red menu bar at the top of our home page.",
+      answer:"In some destinations it may not be wise to drink the local water. For more details, you can find country-specific information in our destination pages.",
     },
   
   ];
